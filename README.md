@@ -1,5 +1,5 @@
 # :strawberry:Team-Strawberries:strawberry:
-**Team Members**\
+**:handshake:Team Members**\
 Bromwich Andrew\
 Garsina Alise\
 Paulauskaite Karolina\
