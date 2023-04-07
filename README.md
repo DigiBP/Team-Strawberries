@@ -1,8 +1,8 @@
 # :strawberry:Team-Strawberries:strawberry:
-**:handshake:Team Members:handshake:**\
- * Andrew Bromwich\
- * Alise Garsina \
- * Karolina Paulauskaite \
+**:handshake:Team Members:handshake:**
+ * Andrew Bromwich
+ * Alise Garsina 
+ * Karolina Paulauskaite 
  * Addhe Vehapi 
 
 ## Table of Contents
