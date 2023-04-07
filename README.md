@@ -9,7 +9,8 @@ Vehapi Addhe
 1. [Introduction](introduction)
 2. [Background](background)
 3. [The As-Is-Process](#the-as-is-process)
-4. [The To-Be-Process](#the-to-be-process)
+4. [Description of the Workflow-Steps](#Description-of-the-Workflow-Steps)
+5. [The To-Be-Process](#the-to-be-process)
 
 ## Introduction
 The selection of the supplier might be a quite tought process to go through. That said a strategic approach of choosing the right supplier is important. 
