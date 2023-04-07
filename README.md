@@ -1,9 +1,9 @@
 # :strawberry:Team-Strawberries:strawberry:
 **:handshake:Team Members:handshake:**\
-Bromwich Andrew\
-Garsina Alise\
-Paulauskaite Karolina\
-Vehapi Addhe
+  Bromwich Andrew\
+  Garsina Alise\
+  Paulauskaite Karolina\
+  Vehapi Addhe
 
 ## Table of Contents
 1. [Introduction](introduction)
