@@ -37,6 +37,7 @@ The goal of our project is to ease the process of supplier choice. Specifically,
 
 
 ## The 'As-Is-Process':
+![Supplier Selection As-Is](https://user-images.githubusercontent.com/127504098/230606267-04b2643b-42bd-4593-abac-ce92d7751550.png)
 
 
 ## Description of the Workflow-Steps
