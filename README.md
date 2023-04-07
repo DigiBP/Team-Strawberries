@@ -1,4 +1,4 @@
-# Team-Strawberries
+# :strawberry:Team-Strawberries:strawberry:
 **Team Members**\
 Bromwich Andrew\
 Garsina Alise\
