@@ -20,7 +20,9 @@ Our project team is dedicted to help the SMEs to chose the right supplier effici
 Our project,
 
 ## Background
-The goal of our project is to ease the process of supplier choice. Specifically, we want to digialize and automize some tasks. We want to implement some decision models with defined rules as well as create APIs to create a user friendly site to operate. 
+Our project's primary objective is to transform and enhance the supplier selection process by leveraging digitalization and automation technologies. By integrating these cutting-edge solutions, we aim to significantly improve the efficiency and effectiveness of the decision-making process for choosing suppliers. To achieve this, we plan to develop sophisticated decision models that incorporate clearly defined rules and criteria, ensuring a consistent and transparent evaluation process.
+
+Additionally, we will create Application Programming Interfaces (APIs) that facilitate seamless integration with existing systems and enable a user-friendly platform for effortless operation. This platform will empower stakeholders to access essential information, streamline workflows, and make informed decisions in a timely manner. The combination of advanced decision models and an intuitive digital platform will not only simplify the supplier selection process but also promote a more collaborative and data-driven approach to strategic procurement management.
 
 
 ## The 'As-Is-Process':
