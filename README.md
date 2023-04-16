@@ -27,6 +27,7 @@ Additionally, we will create Application Programming Interfaces (APIs) that faci
 
 ## The 'As-Is-Process':
 
+![Supplier Selection As-Is v2](https://user-images.githubusercontent.com/127504098/232316079-b0c1c2c4-e8f4-43ec-a95d-307f15135c94.png)
 
 
 ## Description of the Workflow-Steps
