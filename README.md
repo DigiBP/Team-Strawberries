@@ -46,7 +46,29 @@ The evaluation stage consists of developing a weighted scoring system, scoring a
 
 ## Task: Conduct Supplier Evaluation
 
-DMN to be added
+*DMN to be added*
+
+The group has defined a point system, which helps us to decide, which supplier should be chosen, considering our criterias set.
+
+The following criterias were defined with the possible inputs in the brackets:
+
+* Country (Switzerland, Germany, Italy, France etc.)
+* Quality Grade ("A", "B", "AB")
+* Price per kg (">=5", "<5", "<=4") 
+* Minimum order ("<=200")
+* Maximum order (
+* Availability (
+* Certification ("HACCP", "Bio Suisse")
+* Shipping Method ("Air", "Ground", "Sea")
+* Lead Time (">=5",)
+
+Here is our longlist grading:
+A, this is the highest grade. The supplier fullfills all necessary criterias for the company and is a perferred supplier.
+B, this is the medium grade. The supplier is placed on the waiting list, in case the perferred supplier is not fullfilling his deliverables.
+C, this is the lowest grade. The supplier is rejected directly, since the criterias set are not fullfilled.
+
+*include the decision table*
+
 
 
 ## Potential of the as-is-process
