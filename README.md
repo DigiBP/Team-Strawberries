@@ -11,11 +11,11 @@
 1. [Introduction](introduction)
 2. [Background](background)
 3. [The As-Is-Process](#the-as-is-process)
-3.1[Description of the Workflow-Steps](#Description-of-the-Workflow-Steps)
-3.1.1 [Conduct Market Research](#Conduct-market-research)
-3.1.2 [Consult internal and external stekeholder](#consult-internal-and-external stakeholder)
-4. [The To-Be-Process](#the-to-be-process)
-4.1 [Description of the Workflow-Steps](#Description-of-the-Workflow-Steps)
+4. [Description of the Workflow-Steps](#Description-of-the-Workflow-Steps)
+5. [Conduct Market Research](#Conduct-market-research)
+6. [Consult internal and external stekeholder](#consult-internal-and-external stakeholder)
+7. [The To-Be-Process](#the-to-be-process)
+8. [Description of the Workflow-Steps](#Description-of-the-Workflow-Steps)
 
 
 ## 1. Introduction
