@@ -63,7 +63,7 @@ The following criterias were defined with the possible inputs in the brackets:
 * Lead Time (">=5",)
 
 Here is our longlist grading:
-A, this is the highest grade. The supplier fullfills all necessary criterias for the company and is a perferred supplier.
+A, this is the highest grade. The supplier fullfills all necessary criterias.
 B, this is the medium grade. The supplier is placed on the waiting list, in case the perferred supplier is not fullfilling his deliverables.
 C, this is the lowest grade. The supplier is rejected directly, since the criterias set are not fullfilled.
 
