@@ -35,7 +35,8 @@ The evaluation stage consists of developing a weighted scoring system, scoring a
 
 ### Task: Conduct Supplier Evaluation
 
-*DMN to be added*
+![Screenshot 2023-05-03 at 21 22 44](https://user-images.githubusercontent.com/5271595/236023068-54cb2977-5202-4f3f-96d5-82a766b806ef.png)
+
 
 The group has defined a point system, which helps us to decide, which supplier should be chosen, considering our criterias set.
 
@@ -45,11 +46,13 @@ The following criterias were defined with the possible inputs in the brackets:
 * Quality Grade ("A", "B", "AB")
 * Price per kg (">=5", "<5", "<=4") 
 * Minimum order ("<=200")
-* Maximum order (
-* Availability (
+* Maximum order ("<=500")
 * Certification ("HACCP", "Bio Suisse")
 * Shipping Method ("Air", "Ground", "Sea")
-* Lead Time (">=5",)
+* Lead Time (">=5")
+
+![Screenshot 2023-05-03 at 21 25 06](https://user-images.githubusercontent.com/5271595/236023525-c1bbd31c-9ff3-4d4f-9e65-03b2e34509e6.png)
+
 
 Here is our longlist grading:
 
@@ -57,7 +60,7 @@ A, this is the highest grade. The supplier fullfills all necessary criterias.
 B, this is the medium grade. The supplier is placed on the waiting list, in case the perferred supplier is not fullfilling his deliverables.
 R, this is the lowest grade. The supplier is rejected directly, since the criterias set are not fullfilled.
 
-*include the decision table*
+![Screenshot 2023-05-03 at 21 25 45](https://user-images.githubusercontent.com/5271595/236023789-f3c7cc5c-49d4-49e6-a084-be2c909b3fe6.png)
 
 
 ## Process Improvement
