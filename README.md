@@ -10,7 +10,7 @@
 ## Introduction
 The selection of the supplier might be a quite tought process to go through. That said a strategic approach of choosing the right supplier is important. Our project team is dedicted to help the SMEs to chose the right supplier efficienlty and without investing too much time in the due dilligence process. 
 
-Deliverables for the project: 
+### 🚀 Deliverables for the project: 
 * Link to GitHub repositories containing:
 * Modelling artefacts (such as BPMN, DMN, CMMN, etc.) and, if required, other project artefacts (such as configuration files, source code, etc.)
 * Documentation about project and processes (as GitHub markdown files (e.g., Readme and interlinked .md files)).
@@ -52,21 +52,23 @@ The following criterias were defined with the possible inputs in the brackets:
 * Lead Time (">=5",)
 
 Here is our longlist grading:
+
 A, this is the highest grade. The supplier fullfills all necessary criterias.
 B, this is the medium grade. The supplier is placed on the waiting list, in case the perferred supplier is not fullfilling his deliverables.
-C, this is the lowest grade. The supplier is rejected directly, since the criterias set are not fullfilled.
+R, this is the lowest grade. The supplier is rejected directly, since the criterias set are not fullfilled.
 
 *include the decision table*
 
 
-
-## Potential of the as-is-process
+## Process Improvement
 
 * The steps of the evaluation can be automized 
 * The request of information and price can be automized
 
+### Process Digiization & Automation
 
-## Steps to be taken
+
+### Steps to be taken
 
 
 ## The 'To-Be-Process':
