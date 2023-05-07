@@ -70,7 +70,7 @@ R, this is the lowest grade. The supplier is rejected directly, since the criter
 
 The main issue with the As-Is process is that there is little to no automation, and most of the process steps are formed with user tasks, which consumes a lot of time to be reviewed and manually forwarded futher within the process. 
 
-### Process Digiization & Automation
+### Process Digitization & Automation
 
 For this we have implemented:
 * Structured definition of evaluation criteria. The main factors that we took into consideration are: location, qualitz grade, price, minimum and maximum order quantity, obtained certifications, shipping method and lead time.
