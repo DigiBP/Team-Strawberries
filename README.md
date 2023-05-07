@@ -77,7 +77,7 @@ For this we have implemented:
 * Set up of an evaluation form. For this step we are using a web-based form builder JotForm. It includes all the questions and areas that correspond to the defined criteria. 
 * Integration with supplier data. After receiving filled out forms, the evaluation results then are integrated with the supplier data that is stored in a database, which is in our case google sheets using data connectors.
 * Automation of data collection. Data collection will be automated by sending the evaluation for to suppliers via email. Then the supplier can then fill out the form and submit it electronically.
-* Automation of data analysis. According to the answers provided by the suppliers in the form they will be given certain amount of points and then it will be summed providing a clear overview of the supplier ranking, and sorts it into the list of the potential candidates and a definit declines. 
+* Automation of data analysis. According to the answers provided by the suppliers in the form and they will be given certain amount of points, which will be displayed and ranked in the desicion table providing a clear overview of the supplier suitability. It helps to sort the suppliers into the list of the potential candidates and a definit declines. 
 * Signing the contract. Based on the evaluation data and outcomes, companies can decide, which suppliers are the best to choose for their business colloboration. After the desicion is taken and final negotiation is completed supplier will receive el. contract using automated workflows which can be signed and submited electorincally, and can be stored in the data base as well. 
 
 ### Steps to be taken
@@ -87,10 +87,11 @@ For this we have implemented:
 3. Connect it with MAKE
 3. Create Information Request Form
 4. Connect it with data base
-5. Prepare Supplier Scorecard
-6. Evaluate the Report from Input Data
-7. Create a Digital Contract
-8. Execute the Process
+5. Create a Decision Table
+6. Prepare Supplier Scorecard
+7. Evaluate the Report from Input Data
+8. Create a Digital Contract
+9. Execute the Process
 
 ## The 'To-Be-Process':
 
