@@ -102,6 +102,8 @@ For this we have implemented:
 
 The Supplier Selection has a high priority and imporatance in our fictive business operations calling for effective decision-making and collaboration. To achieve its best potential, it is crucial for business to implement effective and standardized approach when choosing suppliers. To optimize As-Is process, it is essential to establish fine balance between automation and manual tasks. Automated tasks in streamlining of this process helps to get rid of, as much as possible, manual errors as well provide cost/time-efficiency. The "To Be" process for supplier selection described below in more details combines automated steps with manual tasks and aims to improve decision-making, optimize supplier evaluation, and ensure consistency in the selection criteria. 
 
+Process is triggered by the product order and ends once the right supplier is chosen for the order fulfillment :arrow_down:.
+
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/e081f2f6-c543-407c-8b6c-653cb355484d)
 
 The purpose of implementing the "To Be" supplier selection process is to increase decision-making accuracy and efficiency og the overall process. It creates and advantage of technology capabilities while taking into account the special insights and experience from different stakeholders. 
