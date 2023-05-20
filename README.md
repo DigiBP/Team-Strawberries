@@ -123,11 +123,11 @@ It is imporant to note that while some steps such as reviewing publications and 
 
 There must be certain assumptions made for the fluent implementation of the "To Be" process for supplier selection. For the sake of the exercise we must assume that: 
 
-:one: Access to the industry publications, databases, and other relevant research sources is available. 
-:two: Consultation with external and internal stakeholders are available and they are willing to share their recommendations. 
-:three: The automated system can efficiently collect and exhibit data from sources. 
-:four: The RFI and RFQ are sent to all relevant existing players within the industry and the answers are populating the database for the n amount of times (unlimited submissions). 
-:five: The business - Redsweetberries, has well predefined criteria and guidlines to aid on the evaluation and the official documentaion is attainable to all in the decision included members. 
+* :one: Access to the industry publications, databases, and other relevant research sources is available. 
+* :two: Consultation with external and internal stakeholders are available and they are willing to share their recommendations. 
+* :three: The automated system can efficiently collect and exhibit data from sources. 
+* :four: The RFI and RFQ are sent to all relevant existing players within the industry and the answers are populating the database for the n amount of times (unlimited submissions). 
+* :five: The business - Redsweetberries, has well predefined criteria and guidlines to aid on the evaluation and the official documentaion is attainable to all in the decision included members. 
 
 Keeping in mind these indicated assumptions we can proceed to each step evaluaition. 
 
