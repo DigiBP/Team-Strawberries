@@ -98,4 +98,11 @@ For this we have implemented:
 
 ## The 'To-Be-Process':
 
+### Overview
+
+It is crucial for businesses to implement and effective and standardized approach when choosing suppliers. Automation is important in streamlining this process and getting rid, as much as possible, of manual errors as well providing cost/time-efficiency. The "To Be" process automation for supplier selection described below in more details has the goal of improving decision-making, optimizing supplier evaluation, and ensuring consistency in the selection criteria. 
+
+### Purpose
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/e081f2f6-c543-407c-8b6c-653cb355484d)
 
