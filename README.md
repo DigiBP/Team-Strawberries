@@ -100,9 +100,49 @@ For this we have implemented:
 
 ### Overview
 
-It is crucial for businesses to implement and effective and standardized approach when choosing suppliers. Automation is important in streamlining this process and getting rid, as much as possible, of manual errors as well providing cost/time-efficiency. The "To Be" process automation for supplier selection described below in more details has the goal of improving decision-making, optimizing supplier evaluation, and ensuring consistency in the selection criteria. 
-
-### Purpose
+The Supplier Selection has a high priority and imporatance in our fictive business operations calling for effective decision-making and collaboration. To achieve its best potential, it is crucial for business to implement effective and standardized approach when choosing suppliers. To optimize As-Is process, it is essential to establish fine balance between automation and manual tasks. Automated tasks in streamlining of this process helps to get rid of, as much as possible, manual errors as well provide cost/time-efficiency. The "To Be" process for supplier selection described below in more details combines automated steps with manual tasks and aims to improve decision-making, optimize supplier evaluation, and ensure consistency in the selection criteria. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/e081f2f6-c543-407c-8b6c-653cb355484d)
 
+The purpose of implementing the "To Be" supplier selection process is to increase decision-making accuracy and efficiency og the overall process. It creates and advantage of technology capabilities while taking into account the special insights and experience from different stakeholders. 
+
+### Goals 
+
+As mentioned before there are certain expectations for this partial process automation. The goals of it are as follows: 
+
+* Automate time-consuming, repetitive tasks to streamline the entire supplier selection process. 
+* Enable internal and external stakeholders engagement in supplier evaluation and selection to collaborate and communicate more effectively. 
+* For thorough supplier research automate the collection of pertinent data from databases and industry publications.
+* Keep the process flexible by continuing to use manual tasks for judgment calls and decision-making. 
+* Automated release of RFI and RFQ forms to supplier
+* Maintainace and completion of current list of potential suppliers (supplier file) using both automatic and human inputs. 
+
+It is imporant to note that while some steps such as reviewing publications and databases, and reviewing a list of potential suppliers can be austomated, the final supplier selection will remain as a manual task to guarantee awarness and full understandment of the outcome and other qualitative factors that could be involved in the selection process. 
+
+### Assumptions
+
+There must be certain assumptions made for the fluent implementation of the "To Be" process for supplier selection. For the sake of the exercise we must assume that: 
+
+1. Access to the industry publications, databases, and other relevant research sources is available. 
+2. Consultation with external and internal stakeholders are available and they are willing to share their recommendations. 
+3. The automated system can efficiently collect and exhibit data from sources. 
+4. The RFI and RFQ are sent to all relevant existing players within the industry and the answers are populating the database for the n amount of times (unlimited submissions). 
+5. The business - Redsweetberries, has well predefined criteria and guidlines to aid on the evaluation and the official documentaion is attainable to all in the decision included members. 
+
+Keeping in mind these indicated assumptions we can proceed to each step evaluaition. 
+
+### Conduct Market Research
+
+- Describe more in detail the automation of the step. 
+
+### Send RFI & RFQ to Suppliers
+
+- Describe more in detail the automation of the step. 
+
+### Update supplier file
+
+- Describe more in detail the automation of the step. 
+
+### Analyze Supplier Response 
+
+### Select Supplier 
