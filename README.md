@@ -1,5 +1,9 @@
 # :strawberry:Team-Strawberries:strawberry:
 **:handshake:Team Members:handshake:**
+| Name | Email |
+| ------------- | ------------- |
+| Andrew Bromwich  | andrew.bromwich@students.fhnw.ch  |
+|Alise Garsina  | Content Cell  |
  * Andrew Bromwich
  * Alise Garsina 
  * Karolina Paulauskaite 
