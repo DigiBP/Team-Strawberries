@@ -85,8 +85,6 @@ For this we have implemented:
 ## 1) Create a decision model for the supplier evaluation (TO BE DONE!!) 
 ### Task: Conduct Supplier Evaluation
 
-![Supplier Selection To-Be new (2)](https://github.com/DigiBP/Team-Strawberries/assets/5271595/44cdbb23-81c6-4dcc-837b-96d4be0a036b)
-
 The team has defined a dedicated point system, which helps us to decide, which supplier should be chosen, considering our criterias set.
 
 The following criterias were defined with the possible inputs in the brackets:
