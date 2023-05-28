@@ -150,7 +150,7 @@ To implement the automation and to guarantee process flow effeciency MAKE scenar
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/838c8b79-80a4-446e-affe-e9e13e63f624)
  
-Data base - Google Sheet, was also integrated, which then can be directly accessed from created Gmail account.
+Google Sheet is serving as a data base for the purpose of this assigment.
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/af29c7ad-e471-4ab1-aefe-4de2cce0deed)
 
