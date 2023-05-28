@@ -154,15 +154,13 @@ Data base - Google Sheet, was also integrated, which then can be directly access
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/af29c7ad-e471-4ab1-aefe-4de2cce0deed)
 
-To identify seperate suppliers and facilitate further processing, a unique identifier called BKey (Business Key) for each supplier is created, by using a formula {{pi * random * 1000}}, which essentially helps to pull and connect the required data to Camunda later on in the process.
-
 ### 1. Intgration of Google Sheets
 
 Everytime process is trigged by the request, new row in Google Sheet is added, which helps to collect inputs for data base and send the tocken to following process. Furthermore, in order to connect the received and registred data with our created BPMN model in Camunda, business key needs to be defined, that generates a random number, which is unique for every input variable, so it could be correctly identified by the process. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/bd1c11c7-2562-410c-8459-9c9fec2d052d)
 
-This helps to retain the data and recognize it within the different steps. 
+To identify seperate suppliers and facilitate further processing, a unique identifier called BKey (Business Key) for each supplier is created, by using a formula {{pi * random * 1000}}, which essentially helps to pull and connect the required data to Camunda later on in the process. This helps to retain the data and recognize it within the different steps. 
 
 ### 2. Conduct Market Research
 
@@ -174,11 +172,15 @@ Request for the order initiates the market research. This research is conducted 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/53fd9c93-0ae1-4918-bcb3-b2ca416fd73a)
 
-Depending on the incoming request the market research is activated by specifying search for supplier and the product. For example requesting certain amount of strawberry suppliers, the country of origin and the suppliers email address. The output of the request is then transferred into supplier data base in Google Sheet. 
+Depending on the incoming request the market research is activated by specifying search for supplier and the product. For example requesting certain amount of strawberry suppliers, the country of origin and the suppliers email address. 
+
+After the list of suffient amount of suppliers is generated, it sent directly to the Gmail. The output of the request is then transferred into supplier data base in Google Sheet. 
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/06d4cfeb-19be-4adb-8e98-2a42882cc4d8)
 
 From where following processes are executed. 
 
-### Send RFI & RFQ to the List of Suppliers
+### 3. Send RFI & RFQ to the List of Suppliers
 
 To sufficiently evaluate the supplier we need to inquire more information. Therefore, Request for Information (RFI) and for Quota form is sent out to each new supplier that is created as a new row from an output of conducted market research.
 
@@ -188,13 +190,25 @@ The form includes criteria on which the final supplier evalutation score is conc
 
 Answers from the supplier are automatically populated within the Google Sheet that can be accessed by any internal process participants.
 
-### Supplier Evaluation
+### 4. Supplier Evaluation
+
+After the RFI & RFQ Form is sent the process token moves forward either when the information is received, or when the time event expires, which is in 7 days from the sent out request for information. 
+
+From there on answers given by suppliers are evaluated according to: 
 
 *Points
 *Scorecard
 
-- Describe more in detail the automation of the step. 
+:exclamation: (Updated of this part in in process)
 
-### Analyze Supplier Response 
+### 5. The Final Supplier Selection
 
-### Select Supplier 
+Based on the evaluation score assigned to each considered supplier clear desicion can be made between choosing the right supplier(s) to fullfil the intial customer request. 
+
+After selecting the best match for the order request the E-mail is then sent to the requestor with the **Company's Name** followed by its **Total Score**. In addition the link to Google Sheet is shared, to get more detailed view about the supplier, its capabilities and the criteria that was taken into consideration during the evaluation process. 
+
+On the other hand suppliers that lacked in scoring, or were deemed not sufficient for one or another reason to fullfil the customers request, provided inormation is automatically updated and stored in the internal data base for the future references. 
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/15442fdb-cf89-4bb0-821a-7ca23557f628)
+
+With this step the supplier selection process is closed!
