@@ -150,11 +150,11 @@ To implement the automation and to guarantee process flow effeciency MAKE scenar
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/838c8b79-80a4-446e-affe-e9e13e63f624)
  
-Data base - Google Sheets was also integrated, that can be directly accessed from created Gmail account.
+Data base - Google Sheet, was also integrated, which then can be directly accessed from created Gmail account.
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/af29c7ad-e471-4ab1-aefe-4de2cce0deed)
 
-In order to connect it with Camunda Cockpit for process execution, busi
+To identify seperate suppliers and facilitate further processing, a unique identifier called BKey (Business Key) for each supplier is created, by using a formula {{pi * random * 1000}}, which essentially helps to pull and connect the required data to Camunda later on in the process.
 
 ### 1. Intgration of Google Sheets
 
@@ -166,21 +166,32 @@ This helps to retain the data and recognize it within the different steps.
 
 ### 2. Conduct Market Research
 
-Once the process is trigerred by receiving request for the order, the market research is initiated. This research is conducted by using OpenAI's model capabilities, along wiht the integration of Google Sheets and connection to Camunda.
+The process starts once Supplier Search Request is received. This form contains Requester details (name, surname), Requester e-mail (work e-mail) and Product Name. 
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/6bd3dbd6-538e-4a37-adfb-1b6df1fbfbad)
+
+Request for the order initiates the market research. This research is conducted by using OpenAI's model capabilities, along wiht the integration of Google Sheets. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/53fd9c93-0ae1-4918-bcb3-b2ca416fd73a)
 
-Depending on the incoming request the market research is activated by requesting\ certain amount of "Strawberry Supplier", the country of origin and their suppliers email address. The ouput of the request is then transferred into supplier data base in Google Sheet. 
+Depending on the incoming request the market research is activated by specifying search for supplier and the product. For example requesting certain amount of strawberry suppliers, the country of origin and the suppliers email address. The output of the request is then transferred into supplier data base in Google Sheet. 
 
-To uniquely identify each supplier and facilitate further processing, again a unique identifier called BKey (Business Key) for each supplier is created, by using a formula {{pi * random * 1000}}, assigning a unique value to each supplier entry.
+From where following processes are executed. 
 
-, from where following processes are executed. 
+### Send RFI & RFQ to the List of Suppliers
 
-### Send RFI & RFQ to Suppliers
+To sufficiently evaluate the supplier we need to inquire more information. Therefore, Request for Information (RFI) and for Quota form is sent out to each new supplier that is created as a new row from an output of conducted market research.
 
-- Describe more in detail the automation of the step. 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/e2c6e2ea-3190-4609-aac0-37c8ea43bc19)
 
-### Update supplier file
+The form includes criteria on which the final supplier evalutation score is concluded. The required field of input from the supplier side includes: Email, Business Key provided in subject of the e-mail, Company Name, Contact Person, Address, Zip Code & City, Country, Phone Number, Contact Person Email, Quality grade, Certificate. The second half of the form is more directed towards quantitative metrics, that gives more insights into suppliers competitiveness such as: Request for Quote, Price per KG, Minimum Order (in kg), Maximum Order (in kg), and Total Lead Time (days). 
+
+Answers from the supplier are automatically populated within the Google Sheet that can be accessed by any internal process participants.
+
+### Supplier Evaluation
+
+*Points
+*Scorecard
 
 - Describe more in detail the automation of the step. 
 
