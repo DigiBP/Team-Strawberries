@@ -143,15 +143,18 @@ Data base - Google Sheets was also integrated, that can be directly accessed fro
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/af29c7ad-e471-4ab1-aefe-4de2cce0deed)
 
-In order to connect it with Camunda Cockpit for process execution, busi
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/2e3f14a6-9ab8-41a4-8738-6690006d2fd0)
 
 ### 1. Intgration of Google Sheets
 
-Everytime process is trigged by the request, new row in Google Sheet is added, which helps to collect inputs for data base and send the tocken to following process. Furthermore, in order to connect the received and registred data with our created BPMN model in Camunda, business key needs to be defined, that generates a random number, which is unique for every input variable, so it could be correctly identified by the process. 
+To trigger the process Internal | Request for supplier search form has to be submited, which provides details of Requester details (name, surname), Requester e-mail (work e-mail), and Product Name. Everytime process is trigged by the request, new row in Google Sheet is added, which helps to collect inputs for data base. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/bd1c11c7-2562-410c-8459-9c9fec2d052d)
 
-This helps to retain the data and recognize it within the different steps. 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/01345229-bb84-42bd-a96a-32d8f2da8226)
+
+
+The incoming request then given an input base and directio for the market research done in the next step. 
 
 ### 2. Conduct Market Research
 
@@ -163,9 +166,11 @@ Depending on the incoming request the market research is activated by requesting
 
 To uniquely identify each supplier and facilitate further processing, again a unique identifier called BKey (Business Key) for each supplier is created, by using a formula {{pi * random * 1000}}, assigning a unique value to each supplier entry. The token is then sent further, from where following processes are executed. 
 
-### Send RFI & RFQ to Suppliers
+### 3. Send RFI Form to Suppliers
 
-- Describe more in detail the automation of the step. 
+To properely evaluate if the supplier meets predifined criteria, more information is neede to be acquired from the supplier side. For that we created Requrst for Information (RFI) form.  
+
+Furthermore, in order to connect the received and registred data with our created BPMN model in Camunda, business key needs to be defined, that generates a random number, which is unique for every input variable, so it could be correctly identified by the process. This helps to retain the data and recognize it within the different steps.
 
 ### Update supplier file
 
