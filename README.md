@@ -77,7 +77,7 @@ The main issue with the As-Is process is that there is little to no automation, 
 
 For this we have implemented:
 * Structured definition of evaluation criteria. The main factors that we took into consideration are: location, qualitz grade, price, minimum and maximum order quantity, obtained certifications, shipping method and lead time.
-* Set up of an evaluation form. For this step we are using a web-based form builder JotForm. It includes all the questions and areas that correspond to the defined criteria. 
+* Set up of an evaluation form. For this step we are using a Google Forms. It includes all the questions and areas that correspond to the defined criteria. 
 * Integration with supplier data. After receiving filled out forms, the evaluation results then are integrated with the supplier data that is stored in a database, which is in our case google sheets using data connectors.
 * Automation of data collection. Data collection will be automated by sending the evaluation for to suppliers via email. Then the supplier can then fill out the form and submit it electronically.
 * Automation of data analysis. According to the answers provided by the suppliers in the form and they will be given certain amount of points, which will be displayed and ranked in the desicion table providing a clear overview of the supplier suitability. It helps to sort the suppliers into the list of the potential candidates and a definit declines. 
@@ -87,14 +87,14 @@ For this we have implemented:
 
 1. Define Criteria for Suppliers
 2. Create data base
-3. Connect it with MAKE
 3. Create Information Request Form
 4. Connect it with data base
 5. Create a Decision Table
 6. Prepare Supplier Scorecard
-7. Evaluate the Report from Input Data
-8. Create a Digital Contract
-9. Execute the Process
+7. Evaluate the Results from Input Data
+8. Connect it with MAKE
+9. Connect MAKE with Camunda
+10. Execute the Process
 
 ## :soon: The 'To-Be-Process':
 
@@ -133,9 +133,15 @@ There must be certain assumptions made for the fluent implementation of the "To 
 
 Keeping in mind these indicated assumptions we can proceed to each step evaluaition. 
 
+## Process Automation
+
 ### Conduct Market Research
 
-- Describe more in detail the automation of the step. 
+Once the process is trigerred by receiving request for the order, the market research is initiated. This research is conducted by using OpenAI's model capabilities, along wiht the integration of Google Sheets and connection to Camunda.
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/53fd9c93-0ae1-4918-bcb3-b2ca416fd73a)
+
+Depending on the incoming request the market research is activated by requesting\ certain amount of "Strawberry Supplier", the country of origin and their suppliers email address. The ouput of the request is then transferred into supplier data base, from where following processes are executed. 
 
 ### Send RFI & RFQ to Suppliers
 
