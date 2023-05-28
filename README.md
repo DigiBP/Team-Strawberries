@@ -159,7 +159,11 @@ Once the process is trigerred by receiving request for the order, the market res
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/53fd9c93-0ae1-4918-bcb3-b2ca416fd73a)
 
-Depending on the incoming request the market research is activated by requesting\ certain amount of "Strawberry Supplier", the country of origin and their suppliers email address. The ouput of the request is then transferred into supplier data base, from where following processes are executed. 
+Depending on the incoming request the market research is activated by requesting\ certain amount of "Strawberry Supplier", the country of origin and their suppliers email address. The ouput of the request is then transferred into supplier data base in Google Sheet. 
+
+To uniquely identify each supplier and facilitate further processing, again a unique identifier called BKey (Business Key) for each supplier is created, by using a formula {{pi * random * 1000}}, assigning a unique value to each supplier entry.
+
+, from where following processes are executed. 
 
 ### Send RFI & RFQ to Suppliers
 
