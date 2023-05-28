@@ -199,7 +199,7 @@ From there on answers given by suppliers are evaluated according to:
 *Points
 *Scorecard
 
-:exclamation: (Updated of this part in in process)
+:exclamation: (Update of this part in in process)
 
 ### 5. The Final Supplier Selection
 
