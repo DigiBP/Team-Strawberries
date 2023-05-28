@@ -10,38 +10,84 @@
 
 **Coach of the Project: Charuta Pande/Maja Spahic** 
 
-## Introduction
-The selection of the supplier might be a quite tought process to go through, however it is a crucial one, since it has a significant impact on the success or losses of a company. That said a strategic approach of choosing the right supplier is important. The supplier selection process involves many different steps, which has a direct effect on company's resourses such as human, financial, time, as well as the quality and reliability of it all. In addition, supplier selection also plays a key role in managing risk and ensuring compliance. It requires careful planning, evaluation and communication, where introduction of digitalization and automation can improve supply process, enhance sustainability and reduce costs.  Our project team is dedicted to help the SMEs to chose the right supplier efficienlty and without investing too much time in the due dilligence process. 
+# Introduction
+The selection of the supplier might be a quite tought process to go through, however it is a crucial one, since it has a significant impact on the success or losses of a company. That said a strategic approach of choosing the right supplier is important. The supplier selection process involves many different steps, which has a direct effect on company's resourses such as human, financial, time, as well as the quality and reliability of it all. In addition, supplier selection also plays a key role in managing risk and ensuring compliance. It requires careful planning, evaluation and communication, where introduction of digitalization and automation can improve supply process, enhance sustainability and reduce costs. Our project team is dedicted to help the SMEs to chose the right supplier efficienlty and without investing too much time in the due dilligence process. 
 
-### 🚀 Deliverables for the project: 
+## Background
+Our project's primary objective is to transform and enhance the supplier selection process by leveraging digitalization and automation technologies. The case presented further, shall be used for best practice cases for other SMEs. By integrating these cutting-edge solutions, we aim to significantly improve the efficiency and effectiveness of the decision-making process for choosing suppliers. To achieve this, we plan to develop sophisticated decision models that incorporate clearly defined rules and criteria, ensuring a consistent and transparent evaluation process.
+
+Our project team will create Application Programming Interfaces (APIs) that facilitate seamless integration with existing systems and enable a user-friendly platform for effortless operation. This platform will empower stakeholders to access essential information, streamline workflows, and make informed decisions in a timely manner. The combination of advanced decision models and an intuitive digital platform will not only simplify the supplier selection process but also promote a more collaborative and data-driven approach to strategic procurement management.
+
+## 🚀 Deliverables for the project: 
 * Link to GitHub repositories containing:
 * Modelling artefacts (such as BPMN, DMN, CMMN, etc.) and, if required, other project artefacts (such as configuration files, source code, etc.)
 * Documentation about project and processes (as GitHub markdown files (e.g., Readme and interlinked .md files)).
 
 
-## Background
-Our project's primary objective is to transform and enhance the supplier selection process by leveraging digitalization and automation technologies. By integrating these cutting-edge solutions, we aim to significantly improve the efficiency and effectiveness of the decision-making process for choosing suppliers. To achieve this, we plan to develop sophisticated decision models that incorporate clearly defined rules and criteria, ensuring a consistent and transparent evaluation process.
+# The 'As-Is-Process':
 
-Additionally, we will create Application Programming Interfaces (APIs) that facilitate seamless integration with existing systems and enable a user-friendly platform for effortless operation. This platform will empower stakeholders to access essential information, streamline workflows, and make informed decisions in a timely manner. The combination of advanced decision models and an intuitive digital platform will not only simplify the supplier selection process but also promote a more collaborative and data-driven approach to strategic procurement management.
+![Supplier Selection As-Is v2 (1)](https://github.com/DigiBP/Team-Strawberries/assets/5271595/d608035f-aa73-4cd7-b05f-3dc1338ea342)
+
+A typical supplier selection process should involve the following steps: 
+* Identifying suppliers
+* Soliciting information from suppliers
+* Setting contract terms
+* Negotiating with suppliers
+* Evaluating suppliers
+
+The process model beginns with an internal request for a new supplier. As soon as the procurement team receives the request via e-mail, three parallel tasks are exectued from user: 
+* review industry publications and databases
+* internal and external stakeholder consulting 
+* conduct the market research
+
+As soon as all steps are completed, the user is creating a list of potential suppliers with the help of excel ("supplier file"). As soon as the list is complete, the user is sending the Request for Information (RFI) or Request for Proposal (RFP), and reviewing responses. If the information received from the supplier, the user is updating the supplier file. If within 7 days there is no answer, the answers are not received, the supplier on the list is not consiered.
+
+After 7 days, suppliers are evaluated based on criteria such as company characteristics, product quality, financial stability, geographical location, and sustainability practices. Initial screening of suppliers is performed using these criteria, and if there are enough pre-qualified suppliers, the process proceeds to soliciting information from suppliers. The evaluation stage consists of developing a weighted scoring system, scoring and ranking suppliers based on their RFI/RFP responses, and conducting site visits or audits if necessary. If the supplier meets performance expectations, the relationship continue and the department which requested the research, receives an e-mail with the perferred supplier
+
+### ⚡ Problem of As-Is-Process: 
+Currently the As-Is-Prozess is very manual and user task driven. That said, the process is prone to error and is not efficient. The main issue with the As-Is process is that there is little to no automation, and most of the process steps are formed with user tasks, which consumes a lot of time to be reviewed and manually forwarded futher within the process. 
+
+### ⌛ Following tasks shall be automated/digitilized: 
+* The market research
+* Sending of the RFI & RFQ to the chosen suppliers 
+* Update of the excel files with the answers from the potential suppliers 
+* Evaluation of the supplier responses  
+
+### Steps to be taken
+1. Define Criteria for Suppliers
+2. Create data base
+3. Create Information Request Form
+4. Connect it with data base
+5. Create a Decision Table
+6. Prepare Supplier Scorecard
+7. Evaluate the Results from Input Data
+8. Connect it with MAKE
+9. Connect MAKE with Camunda
+10. Execute the Process
 
 
-### The 'As-Is-Process':
+# The 'To-Be-Process':
 
-![Supplier Selection As-Is v2](https://user-images.githubusercontent.com/127504098/232316079-b0c1c2c4-e8f4-43ec-a95d-307f15135c94.png)
+There is a high need to improve process.  After evaluating the As-Is-Process our team found a lot of potential of automizing and ditilizing some processes in a non-complex way. The tasks are going to be user-friendly and also transparent. Following are the steps taken from our team, to automize/digitize the process: 
+
+### Process Digitization & Automation
+
+For this we have implemented:
+* Structured definition of evaluation criteria. The main factors that we took into consideration are: location, qualitz grade, price, minimum and maximum order quantity, obtained certifications, shipping method and lead time.
+* Set up of an evaluation form. For this step we are using a Google Forms. It includes all the questions and areas that correspond to the defined criteria. 
+* Integration with supplier data. After receiving filled out forms, the evaluation results then are integrated with the supplier data that is stored in a database, which is in our case google sheets using data connectors.
+* Automation of data collection. Data collection will be automated by sending the evaluation for to suppliers via email. Then the supplier can then fill out the form and submit it electronically.
+* Automation of data analysis. According to the answers provided by the suppliers in the form and they will be given certain amount of points, which will be displayed and ranked in the desicion table providing a clear overview of the supplier suitability. It helps to sort the suppliers into the list of the potential candidates and a definit declines. 
+
+![Supplier Selection To-Be new (2)](https://github.com/DigiBP/Team-Strawberries/assets/5271595/a2a3a3dc-7b42-454e-973b-49f658783835)
 
 
-### Description-of-the-Workflow-Steps
-The process model begins with identifying potential suppliers through market research, consulting stakeholders, reviewing industry publications, and creating a list of potential suppliers. If enough suppliers are identified, the process moves to the pre-qualification stage. In this stage, suppliers are evaluated based on criteria such as company characteristics, product quality, financial stability, geographical location, and sustainability practices. Initial screening of suppliers is performed using these criteria, and if there are enough pre-qualified suppliers, the process proceeds to soliciting information from suppliers. This involves developing and distributing a Request for Information (RFI) or Request for Proposal (RFP), and reviewing responses. Based on the satisfactory nature of the responses, the process either continues to the evaluation stage or returns to earlier steps.
-
-The evaluation stage consists of developing a weighted scoring system, scoring and ranking suppliers based on their RFI/RFP responses, and conducting site visits or audits if necessary. If top-ranked suppliers are suitable, the process moves to negotiating and setting contract terms, which includes developing negotiation strategies, negotiating with top-ranked suppliers, finalizing contract terms, and signing contracts. Once negotiations are successful, the process enters the monitoring and review stage. This involves establishing Key Performance Indicators (KPIs), monitoring supplier performance, conducting periodic reviews, providing feedback, and identifying improvement opportunities. If the supplier meets performance expectations, the relationship continues; otherwise, contract terms are revisited or alternative suppliers are considered.
-
-
+## 1) Create a decision model for the supplier evaluation (TO BE DONE!!) 
 ### Task: Conduct Supplier Evaluation
 
 ![Screenshot 2023-05-03 at 21 22 44](https://user-images.githubusercontent.com/5271595/236023068-54cb2977-5202-4f3f-96d5-82a766b806ef.png)
 
-
-The group has defined a point system, which helps us to decide, which supplier should be chosen, considering our criterias set.
+The team has defined a dedicated point system, which helps us to decide, which supplier should be chosen, considering our criterias set.
 
 The following criterias were defined with the possible inputs in the brackets:
 
@@ -66,39 +112,8 @@ R, this is the lowest grade. The supplier is rejected directly, since the criter
 ![Screenshot 2023-05-03 at 21 25 45](https://user-images.githubusercontent.com/5271595/236023789-f3c7cc5c-49d4-49e6-a084-be2c909b3fe6.png)
 
 
-## Process Improvement
-
-* The steps of the evaluation can be automized 
-* The request of information and price can be automized
-
-The main issue with the As-Is process is that there is little to no automation, and most of the process steps are formed with user tasks, which consumes a lot of time to be reviewed and manually forwarded futher within the process. 
-
-### Process Digitization & Automation
-
-For this we have implemented:
-* Structured definition of evaluation criteria. The main factors that we took into consideration are: location, qualitz grade, price, minimum and maximum order quantity, obtained certifications, shipping method and lead time.
-* Set up of an evaluation form. For this step we are using a Google Forms. It includes all the questions and areas that correspond to the defined criteria. 
-* Integration with supplier data. After receiving filled out forms, the evaluation results then are integrated with the supplier data that is stored in a database, which is in our case google sheets using data connectors.
-* Automation of data collection. Data collection will be automated by sending the evaluation for to suppliers via email. Then the supplier can then fill out the form and submit it electronically.
-* Automation of data analysis. According to the answers provided by the suppliers in the form and they will be given certain amount of points, which will be displayed and ranked in the desicion table providing a clear overview of the supplier suitability. It helps to sort the suppliers into the list of the potential candidates and a definit declines. 
-* Signing the contract. Based on the evaluation data and outcomes, companies can decide, which suppliers are the best to choose for their business colloboration. After the desicion is taken and final negotiation is completed supplier will receive el. contract using automated workflows which can be signed and submited electorincally, and can be stored in the data base as well. 
-
-### Steps to be taken
-
-1. Define Criteria for Suppliers
-2. Create data base
-3. Create Information Request Form
-4. Connect it with data base
-5. Create a Decision Table
-6. Prepare Supplier Scorecard
-7. Evaluate the Results from Input Data
-8. Connect it with MAKE
-9. Connect MAKE with Camunda
-10. Execute the Process
-
-## :soon: The 'To-Be-Process':
-
-### Overview
+## 2) Automatically send the RFI & RFQ
+### Service Task: Send RFI & RFQ to suppliers 
 
 The Supplier Selection has a high priority and imporatance in our fictive business operations calling for effective decision-making and collaboration. To achieve its best potential, it is crucial for business to implement effective and standardized approach when choosing suppliers. To optimize As-Is process, it is essential to establish fine balance between automation and manual tasks. Automated tasks in streamlining of this process helps to get rid of, as much as possible, manual errors as well provide cost/time-efficiency. The "To Be" process for supplier selection described below in more details combines automated steps with manual tasks and aims to improve decision-making, optimize supplier evaluation, and ensure consistency in the selection criteria. 
 
@@ -143,18 +158,15 @@ Data base - Google Sheets was also integrated, that can be directly accessed fro
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/af29c7ad-e471-4ab1-aefe-4de2cce0deed)
 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/2e3f14a6-9ab8-41a4-8738-6690006d2fd0)
+In order to connect it with Camunda Cockpit for process execution, busi
 
 ### 1. Intgration of Google Sheets
 
-To trigger the process Internal | Request for supplier search form has to be submited, which provides details of Requester details (name, surname), Requester e-mail (work e-mail), and Product Name. Everytime process is trigged by the request, new row in Google Sheet is added, which helps to collect inputs for data base. 
+Everytime process is trigged by the request, new row in Google Sheet is added, which helps to collect inputs for data base and send the tocken to following process. Furthermore, in order to connect the received and registred data with our created BPMN model in Camunda, business key needs to be defined, that generates a random number, which is unique for every input variable, so it could be correctly identified by the process. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/bd1c11c7-2562-410c-8459-9c9fec2d052d)
 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/01345229-bb84-42bd-a96a-32d8f2da8226)
-
-
-The incoming request then given an input base and directio for the market research done in the next step. 
+This helps to retain the data and recognize it within the different steps. 
 
 ### 2. Conduct Market Research
 
@@ -164,13 +176,13 @@ Once the process is trigerred by receiving request for the order, the market res
 
 Depending on the incoming request the market research is activated by requesting\ certain amount of "Strawberry Supplier", the country of origin and their suppliers email address. The ouput of the request is then transferred into supplier data base in Google Sheet. 
 
-To uniquely identify each supplier and facilitate further processing, again a unique identifier called BKey (Business Key) for each supplier is created, by using a formula {{pi * random * 1000}}, assigning a unique value to each supplier entry. The token is then sent further, from where following processes are executed. 
+To uniquely identify each supplier and facilitate further processing, again a unique identifier called BKey (Business Key) for each supplier is created, by using a formula {{pi * random * 1000}}, assigning a unique value to each supplier entry.
 
-### 3. Send RFI Form to Suppliers
+, from where following processes are executed. 
 
-To properely evaluate if the supplier meets predifined criteria, more information is neede to be acquired from the supplier side. For that we created Requrst for Information (RFI) form.  
+### Send RFI & RFQ to Suppliers
 
-Furthermore, in order to connect the received and registred data with our created BPMN model in Camunda, business key needs to be defined, that generates a random number, which is unique for every input variable, so it could be correctly identified by the process. This helps to retain the data and recognize it within the different steps.
+- Describe more in detail the automation of the step. 
 
 ### Update supplier file
 
