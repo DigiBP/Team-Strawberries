@@ -133,9 +133,27 @@ There must be certain assumptions made for the fluent implementation of the "To 
 
 Keeping in mind these indicated assumptions we can proceed to each step evaluaition. 
 
-## Process Automation
+## Steps in Process Automation using MAKE scenarios
 
-### Conduct Market Research
+To implement the automation and to guarantee process flow effeciency MAKE scenarios were used. To set up this environment first step was to create a common Gmail account, from which all of interactions would be conducted, such as sending/receiving the RFI froms, communication with suppliers.
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/838c8b79-80a4-446e-affe-e9e13e63f624)
+ 
+Data base - Google Sheets was also integrated, that can be directly accessed from created Gmail account.
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/af29c7ad-e471-4ab1-aefe-4de2cce0deed)
+
+In order to connect it with Camunda Cockpit for process execution, busi
+
+### 1. Intgration of Google Sheets
+
+Everytime process is trigged by the request, new row in Google Sheet is added, which helps to collect inputs for data base and send the tocken to following process. Furthermore, in order to connect the received and registred data with our created BPMN model in Camunda, business key needs to be defined, that generates a random number, which is unique for every input variable, so it could be correctly identified by the process. 
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/bd1c11c7-2562-410c-8459-9c9fec2d052d)
+
+This helps to retain the data and recognize it within the different steps. 
+
+### 2. Conduct Market Research
 
 Once the process is trigerred by receiving request for the order, the market research is initiated. This research is conducted by using OpenAI's model capabilities, along wiht the integration of Google Sheets and connection to Camunda.
 
