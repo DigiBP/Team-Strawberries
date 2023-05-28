@@ -146,7 +146,7 @@ Keeping in mind these indicated assumptions we can proceed to each step evaluait
 
 ## Steps in Process Automation using MAKE scenarios
 
-To implement the automation and to guarantee process flow effeciency MAKE scenarios were used. To set up this environment first step was to create a common Gmail account, from which all of interactions would be conducted, such as sending/receiving the RFI froms, communication with suppliers.
+To implement the automation and to guarantee process flow effeciency MAKE scenarios were used. To set up this environment first step was to create a common Gmail account, from which all of interactions would be conducted, such as sending/receiving the RFI froms, communication with suppliers, as well as the access to Google Sheet and Google Form.
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/838c8b79-80a4-446e-affe-e9e13e63f624)
  
