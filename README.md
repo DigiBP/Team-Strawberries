@@ -212,7 +212,7 @@ Each supplier is appointed certain amount of points regarding different evaluati
 
 ***Scoring System***
 
-* :globe_with_meridians: Coutry Point Scale: 0 - 50; 
+<p> :globe_with_meridians: Coutry Point Scale: 0 - 50;  <br>
 * :straight_ruler: Quality Point Scale: 0 - 50;
 * :moneybag: Price Point Scale: ?
 * :arrow_down: Min. Order Point: if minimum order < 200, appoint -1000 (=unacceptable). if > 200, keep 0.
