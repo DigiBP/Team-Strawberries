@@ -182,9 +182,11 @@ From where following processes are executed.
 
 ### 3. Send RFI & RFQ to the List of Suppliers
 
-To sufficiently evaluate the supplier we need to inquire more information. Therefore, Request for Information (RFI) and for Quota form is sent out to each new supplier that is created as a new row from an output of conducted market research.
+To sufficiently evaluate the supplier we need to inquire more information. Therefore, Request for Information (RFI) and for Request for Quota (RFQ) form is sent out to each new supplier that is created as a new row from an output of conducted market research.
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/e2c6e2ea-3190-4609-aac0-37c8ea43bc19)
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/484ff213-3924-4bf3-8ab2-22e16bbaa84d)
 
 The form includes criteria on which the final supplier evalutation score is concluded. The required field of input from the supplier side includes: Email, Business Key provided in subject of the e-mail, Company Name, Contact Person, Address, Zip Code & City, Country, Phone Number, Contact Person Email, Quality grade, Certificate. The second half of the form is more directed towards quantitative metrics, that gives more insights into suppliers competitiveness such as: Request for Quote, Price per KG, Minimum Order (in kg), Maximum Order (in kg), and Total Lead Time (days). 
 
@@ -192,14 +194,32 @@ Answers from the supplier are automatically populated within the Google Sheet th
 
 ### 4. Supplier Evaluation
 
-After the RFI & RFQ Form is sent the process token moves forward either when the information is received, or when the time event expires, which is in 7 days from the sent out request for information. 
+After the RFI & RFQ Form is sent the process token moves forward either when the information is received, or when the time event expires, which is set to be 7 days from the sent out request for information. 
 
 From there on answers given by suppliers are evaluated according to: 
-
 *Points
-*Scorecard
+:exclamation: *Scorecard (do we use??)
 
-:exclamation: (Update of this part in in process)
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/eff14d44-7771-4bf6-ac9f-cbb3df918394)
+
+Each supplier is appointed certain amount of points regarding different evaluation criteria: 
+* Country: Allows to estimate total lead time, delivery time, transportation method and costs.
+* Quality: A - highest level of quality, AB - good level of quality, B - average level of quality. 
+* Price: Provides view on the price competitiveness of the supplier.
+* Min. Order: defines limits of the Minimum Order Quantity
+* Max. Order: defines limits of the Maximum Order Quantity.
+* Certification: Proves suppliers reliability, legitimacy and compliance with respective regulations, bodies or organizations. 
+
+***Scoring System***
+
+:globe_with_meridians: Coutry Point Scale: 0 - 50; 
+:straight_ruler: Quality Point Scale: 0 - 50;
+:moneybag: Price Point Scale: ?
+:arrow_down: Min. Order Point: if minimum order < 200, appoint -1000 (=unacceptable). if > 200, keep 0.
+:arrow_up: Max. Order Point: if minimum order < 500, appoint -1000 (=unacceptable). if > 500, keep 0.
+:scroll: Certification Points: Each certification is worth 50 points. 
+
+At the end **Total Score** is summed providing the list of selections for the decision. 
 
 ### 5. The Final Supplier Selection
 
