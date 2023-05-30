@@ -212,12 +212,12 @@ Each supplier is appointed certain amount of points regarding different evaluati
 
 ***Scoring System***
 
-*:globe_with_meridians: Coutry Point Scale: 0 - 50; 
-*:straight_ruler: Quality Point Scale: 0 - 50;
-*:moneybag: Price Point Scale: ?
-*:arrow_down: Min. Order Point: if minimum order < 200, appoint -1000 (=unacceptable). if > 200, keep 0.
-*:arrow_up: Max. Order Point: if minimum order < 500, appoint -1000 (=unacceptable). if > 500, keep 0.
-*:scroll: Certification Points: Each certification is worth 50 points. 
+* :globe_with_meridians: Coutry Point Scale: 0 - 50; 
+* :straight_ruler: Quality Point Scale: 0 - 50;
+* :moneybag: Price Point Scale: ?
+* :arrow_down: Min. Order Point: if minimum order < 200, appoint -1000 (=unacceptable). if > 200, keep 0.
+* :arrow_up: Max. Order Point: if minimum order < 500, appoint -1000 (=unacceptable). if > 500, keep 0.
+* :scroll: Certification Points: Each certification is worth 50 points. 
 
 At the end **Total Score** is summed providing the list of selections for the decision. 
 
