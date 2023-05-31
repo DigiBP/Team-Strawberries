@@ -7,11 +7,7 @@
 | Karolina Paulauskaite | karolina.paulauskaite@students.fhnw.ch |
 | Addhe Vehapi | addhe.vehapi@students.fhnw.ch |
 
-
 **Coach of the Project: Charuta Pande/Maja Spahic** 
-
-## Table of Contents
-1. [Introduction](# Introduction)
 
 
 
