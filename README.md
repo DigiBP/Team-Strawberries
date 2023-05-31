@@ -10,6 +10,17 @@
 
 **Coach of the Project: Charuta Pande/Maja Spahic** 
 
+## Table of Contents
+1. [Introduction](introduction)
+2. [Background](background)
+3. [The As-Is-Process](#the-as-is-process)
+    1. [Documents received:](#documents-received)    
+    2. [File documents:](#file-documents)    
+    3. [Review document completeness:](#review-document-completeness)    
+    4. [Request missing documents or information:](#request-missing-documents-or-information)    
+    5. [Create or update data entry:](#create-or-update-data-entry)
+
+
 # Introduction
 The selection of the supplier might be a quite tought process to go through, however it is a crucial one, since it has a significant impact on the success or losses of a company. That said a strategic approach of choosing the right supplier is important. The supplier selection process involves many different steps, which has a direct effect on company's resourses such as human, financial, time, as well as the quality and reliability of it all. In addition, supplier selection also plays a key role in managing risk and ensuring compliance. It requires careful planning, evaluation and communication, where introduction of digitalization and automation can improve supply process, enhance sustainability and reduce costs. Our project team is dedicted to help the SMEs to chose the right supplier efficienlty and without investing too much time in the due dilligence process. 
 
