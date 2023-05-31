@@ -11,14 +11,8 @@
 **Coach of the Project: Charuta Pande/Maja Spahic** 
 
 ## Table of Contents
-1. [Introduction](introduction)
-2. [Background](background)
-3. [The As-Is-Process](#the-as-is-process)
-    1. [Documents received:](#documents-received)    
-    2. [File documents:](#file-documents)    
-    3. [Review document completeness:](#review-document-completeness)    
-    4. [Request missing documents or information:](#request-missing-documents-or-information)    
-    5. [Create or update data entry:](#create-or-update-data-entry)
+1. [Introduction](# Introduction)
+
 
 
 # Introduction
