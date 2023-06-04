@@ -228,7 +228,7 @@ Path 1: Update Supplier File: When the supplier submits RFI & RFQ form, and it i
  
 Path 2: Wait 7 Days and to proceed to <Select Supplier> User task: It means that after the service task, the token waits for a period of 7 days (Timer Intermediate Catch Event) before proceeding to the next step, which involves selecting a supplier. 
 
-### 5. Supplier Evaluation
+## 5. Supplier Evaluation
 
 After the RFI & RFQ Form is sent the process token moves forward either when the information is received, or when the time event expires, which is set to be 7 days from the sent out request for information. 
 
@@ -256,7 +256,7 @@ Each supplier is appointed certain amount of points regarding different evaluati
 
 At the end **Total Score** is summed providing the list of selections for the decision. <br>
 
-### 6. The Final Supplier Selection
+## 6. The Final Supplier Selection
 
 Based on the evaluation score assigned to each considered supplier clear desicion can be made between choosing the right supplier(s) to fullfil the intial customer request. 
  
