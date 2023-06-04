@@ -143,7 +143,7 @@ R, this is the lowest grade. The supplier is rejected directly, since the criter
 
 ## Steps in Process Automation using MAKE scenarios
 
-To implement the automation and to guarantee process flow efficiency MAKE scenarios were used. To set up this environment first step was to create a common Gmail account, from which all of interactions would be conducted, such as sending/receiving the RFI & RFQ forms, communication with suppliers, as well as the access to Google Sheet and Google Form.
+To implement the automation and to guarantee process flow efficiency MAKE scenarios were used. To set up this environment first step was to create a common Gmail account, from which all of interactions would be conducted, such as: receiving order request, sending/receiving the RFI & RFQ forms, communication with suppliers, as well as the access to Google Sheet and Google Form.
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/838c8b79-80a4-446e-affe-e9e13e63f624)
  
@@ -153,7 +153,7 @@ Google Sheet is serving as a data base for the purpose of this assignment.
 
 ### 1. Integration of Google Sheets
 
-Everytime process is trigged by the request, new row in Google Sheet is added, which helps to collect inputs for data base and send the tocken to following process. Furthermore, in order to connect the received and registred data with our created BPMN model in Camunda, business key needs to be defined, that generates a random number, which is unique for every input variable, so it could be correctly identified by the process. 
+Everytime the process is trigged by the request, new row in Google Sheet is added, which helps to collect inputs for data base and send the tocken to the following process. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/bd1c11c7-2562-410c-8459-9c9fec2d052d)
 
