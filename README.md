@@ -171,26 +171,32 @@ The process starts once internal supplier search request is received from <Order
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/34474438-776d-48d1-8018-8639aec73708)
 
-Once the request been sent, e-mail at redsweetberries@gmail.com account is received stating that this specific form has a new response: 
+Once the request been sent, e-mail at redsweetberries@gmail.com account is received stating that this specific form has a new response, and it is populated in the internal supplier data base. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/11fd561b-eb37-4528-a232-9c29a36e93c2)
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/1994b9d8-cb7a-4286-bfbe-7454021fce10)
 
-The token in Camunda is create to initiate first user task, which has to be claimed and completed. 
+The token in Camunda is created after Message Start Event is initiated and transferred to the first user task of <Input Supplier Search>, which has to be claimed and completed. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/36692fa7-c367-4936-a709-f1a0992aace2)
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/6cb7e3d8-c11d-4b23-b5cf-abc00aa69459)
  
-The information received in this step provides details that need to be inputed for the market research. 
-
+After the Input Supplier Search is completed the token moves forward to the next Service task.
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/e6918da4-c424-4cd9-8218-eb3db9263e2c)
 
 ### 3. Conduct Market Research
 
-
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/1994b9d8-cb7a-4286-bfbe-7454021fce10)
-
-Request for the order initiates the market research. This research is conducted by using OpenAI's model capabilities, along wiht the integration of Google Sheets. 
-Depending on the incoming request the market research is activated by specifying search for supplier and the product. For example requesting certain amount of strawberry suppliers, the country of origin and the suppliers email address. 
+Market research is conducted by using OpenAI's model capabilities, along wiht the integration of Google Tools. 
+Depending on the incoming request the form is submited by specifying search for supplier and the product. For example requesting certain amount of strawberry suppliers, the country of origin and the suppliers email address. 
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/24ee66d2-63a3-4cb7-aced-7b422affb3ce)
+ 
+The request and generated results are then recorded and stored in AI search database:
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/46979323-af6d-477c-8309-aaa75ebb2f90)
 
 After the list of suffient amount of suppliers is generated, it sent directly to the Gmail. The output of the request is then transferred into supplier data base in Google Sheet. 
 
