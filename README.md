@@ -46,7 +46,7 @@ As soon as all steps are completed, the user is creating a list of potential sup
 After 7 days, suppliers are evaluated based on criteria such as company characteristics, product quality, financial stability, geographical location, and sustainability practices. Initial screening of suppliers is performed using these criteria, and if there are enough pre-qualified suppliers, the process proceeds to soliciting information from suppliers. The evaluation stage consists of developing a weighted scoring system, scoring and ranking suppliers based on their RFI/RFP responses, and conducting site visits or audits if necessary. If the supplier meets performance expectations, the relationship continue and the department which requested the research, receives an e-mail with the perferred supplier
 
 ### ⚡ Problem of As-Is-Process: 
-Currently the As-Is-Prozess is very manual and user task driven. That said, the process is prone to error and is not efficient. The main issue with the As-Is process is that there is little to no automation, and most of the process steps are formed with user tasks, which consumes a lot of time to be reviewed and manually forwarded futher within the process. 
+Currently the As-Is-Process is very manual and user task driven. That said, the process is prone to error and is not efficient. The main issue with the As-Is process is that there is no automation, and most of the process steps are formed with user tasks, which consumes a lot of time to be reviewed and manually forwarded futher within the process. 
 
 ### ⌛ Following tasks shall be automated/digitilized: 
 * The market research
