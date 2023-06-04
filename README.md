@@ -194,17 +194,17 @@ Depending on the incoming request the form is submited by specifying search for 
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/24ee66d2-63a3-4cb7-aced-7b422affb3ce)
  
-The request and generated results are then recorded and stored in AI search database:
+By submiting this form the process is moving its token further to the following User Task. 
  
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/46979323-af6d-477c-8309-aaa75ebb2f90)
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/41255956-2a9c-4339-8c8b-0d5144bf6a89)
+ 
+By claiming this task we receive AI generated inputs for the request, which then has to be reviewd and recorded in supplier database in order to send RFI & RFQ form. 
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/7d34239e-cc90-43eb-9b97-da592b259824)
 
-After the list of suffient amount of suppliers is generated, it sent directly to the Gmail. The output of the request is then transferred into supplier data base in Google Sheet. 
+After the task is completed token moves once more to the next Service Task.
 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/06d4cfeb-19be-4adb-8e98-2a42882cc4d8)
-
-From where following processes are executed. 
-
-### 3. Send RFI & RFQ to the List of Suppliers
+### 3. Send RFI & RFQ Form to the List of Suppliers
 
 To sufficiently evaluate the supplier we need to inquire more information. Therefore, Request for Information (RFI) and for Request for Quota (RFQ) form is sent out to each new supplier that is created as a new row from an output of conducted market research.
 
