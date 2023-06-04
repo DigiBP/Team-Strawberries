@@ -185,7 +185,7 @@ The token in Camunda is created after Message Start Event is initiated and trans
  
 After the Input Supplier Search is completed the token moves forward to the next Service task.
  
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/e6918da4-c424-4cd9-8218-eb3db9263e2c)
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/e6918da4-c424-4cd9-8218-eb3db9263e2c) 
 
 ### 3. Conduct Market Research
 
@@ -226,7 +226,7 @@ This service task have an Exclusive Gateway (or XOR Gateway) meaning that the to
  
 Path 1: Update Supplier File: When the supplier submits RFI & RFQ form, and it is not meeting specified criteria or other options scored better, the token proceeds directly to the update supplier file service task, that the collected information could be stored anf if needed be shortlisted, or used for the future reference. With the <Supplier File Update> the process of this path is complete. 
  
-Path 2: Wait 7 Days and to proceed to <Select Supplier> User task: It means that after the service task, the token waits for a period of 7 days (Timer Intermediate Catch Event) before proceeding to the next step, which involves selecting a supplier.
+Path 2: Wait 7 Days and to proceed to <Select Supplier> User task: It means that after the service task, the token waits for a period of 7 days (Timer Intermediate Catch Event) before proceeding to the next step, which involves selecting a supplier. <br>
 
 ### 4. Supplier Evaluation
 
@@ -254,7 +254,7 @@ Each supplier is appointed certain amount of points regarding different evaluati
 <p> :arrow_up: Max. Order Point: if minimum order < 500, appoint -1000 (=unacceptable). if > 500, keep 0.  <br>
 <p> :scroll: Certification Points: Each certification is worth 50 points. <br>
 
-At the end **Total Score** is summed providing the list of selections for the decision. 
+At the end **Total Score** is summed providing the list of selections for the decision. <br>
 
 ### 5. The Final Supplier Selection
 
