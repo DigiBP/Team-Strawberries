@@ -167,7 +167,7 @@ This helps to retain the data and recognize it within the different steps.
 
 ### 2. Process trigger - Request for the Order
 
-The process starts once internal supplier search request is received from <Order Product Process>. This form contains Requester details (name, surname), Requester e-mail (work e-mail) and required Product Name. 
+The process starts once internal supplier search request is received from Order Product Process. This form contains Requester details (name, surname), Requester e-mail (work e-mail) and required Product Name. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/34474438-776d-48d1-8018-8639aec73708)
 
@@ -177,7 +177,7 @@ Once the request been sent, e-mail at redsweetberries@gmail.com account is recei
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/1994b9d8-cb7a-4286-bfbe-7454021fce10)
 
-The token in Camunda is created after Message Start Event is initiated and transferred to the first user task of <Input Supplier Search>, which has to be claimed and completed. 
+The token in Camunda is created after Message Start Event is initiated and transferred to the first user task of Input Supplier Search, which has to be claimed and completed. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/36692fa7-c367-4936-a709-f1a0992aace2)
  
@@ -208,7 +208,7 @@ After the task is completed token with two instances (for two different supplier
 
 ### 4. Send RFI & RFQ Form to the List of Suppliers
 
-To sufficiently evaluate the supplier we need to inquire more information. Therefore, Request for Information (RFI) and for Request for Quota (RFQ) form is sent out to each new supplier. . 
+To sufficiently evaluate the supplier we need to inquire more information. Therefore, Request for Information (RFI) and for Request for Quota (RFQ) form is sent out to each new supplier.
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/003846cd-2d17-42b6-8728-b1c4d1b5d773)
 
@@ -224,11 +224,11 @@ This service task have an Exclusive Gateway (or XOR Gateway) meaning that the to
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/b9fc0e51-9896-4568-bc78-20035ff6a227)
  
-Path 1: Update Supplier File: When the supplier submits RFI & RFQ form, and it is not meeting specified criteria or other options scored better, the token proceeds directly to the update supplier file service task, that the collected information could be stored anf if needed be shortlisted, or used for the future reference. With the <Supplier File Update> the process of this path is complete. 
+Path 1: Update Supplier File: When the supplier submits RFI & RFQ form, and it is not meeting specified criteria or other options scored better, the token proceeds directly to the update supplier file service task, that the collected information could be stored anf if needed be shortlisted, or used for the future reference. With the Supplier File Update the process of this path is complete. 
  
-Path 2: Wait 7 Days and to proceed to <Select Supplier> User task: It means that after the service task, the token waits for a period of 7 days (Timer Intermediate Catch Event) before proceeding to the next step, which involves selecting a supplier. 
+Path 2: Wait 7 Days and to proceed to Select Supplier User task: It means that after the service task, the token waits for a period of 7 days (Timer Intermediate Catch Event) before proceeding to the next step, which involves selecting a supplier. 
 
-## 5. Supplier Evaluation
+### 5. Supplier Evaluation
 
 After the RFI & RFQ Form is sent the process token moves forward either when the information is received, or when the time event expires, which is set to be 7 days from the sent out request for information. 
 
@@ -256,7 +256,7 @@ Each supplier is appointed certain amount of points regarding different evaluati
 
 At the end **Total Score** is summed providing the list of selections for the decision. <br>
 
-## 6. The Final Supplier Selection
+### 6. The Final Supplier Selection
 
 Based on the evaluation score assigned to each considered supplier clear desicion can be made between choosing the right supplier(s) to fullfil the intial customer request. 
  
