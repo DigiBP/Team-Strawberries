@@ -51,21 +51,19 @@ Currently the As-Is-Prozess is very manual and user task driven. That said, the 
 ### ⌛ Following tasks shall be automated/digitilized: 
 * The market research
 * Sending of the RFI & RFQ to the chosen suppliers 
-* Update of the excel files with the answers from the potential suppliers 
-* Evaluation of the supplier responses  
+* Update of the data base with the answers from the potential suppliers 
+* Evaluation of the supplier with the scoring system corresponding to their responses  
 
 ### Steps to be taken
-1. Define Criteria for Suppliers
-2. Create data base
-3. Create Information Request Form
-4. Connect it with data base
-5. Create a Decision Table
-6. Prepare Supplier Scorecard
-7. Evaluate the Results from Input Data
-8. Connect it with MAKE
-9. Connect MAKE with Camunda
-10. Execute the Process
-
+1. Set up Google account
+2. Connect to Google Sheet
+3. Define Criteria for Suppliers
+4. Create Supplier Search/RFI & RFQ Forms
+5. Generate data base
+6. Evaluate the Results from Input Data
+7. Connect it with MAKE
+8. Connect MAKE with Camunda
+9. Execute the Process
 
 # The 'To-Be-Process':
 
@@ -79,6 +77,10 @@ For this we have implemented:
 * Integration with supplier data. After receiving filled out forms, the evaluation results then are integrated with the supplier data that is stored in a database, which is in our case google sheets using data connectors.
 * Automation of data collection. Data collection will be automated by sending the evaluation for to suppliers via email. Then the supplier can then fill out the form and submit it electronically.
 * Automation of data analysis. According to the answers provided by the suppliers in the form and they will be given certain amount of points, which will be displayed and ranked in the desicion table providing a clear overview of the supplier suitability. It helps to sort the suppliers into the list of the potential candidates and a definit declines. 
+
+Process is triggered by the product order and ends once the right supplier is chosen for the order fulfillment :arrow_down:.
+
+![Supplier Selection To-Be new (2)](https://github.com/DigiBP/Team-Strawberries/assets/5271595/a2a3a3dc-7b42-454e-973b-49f658783835)
 
 
 ## 1) Create a decision model for the supplier evaluation (TO BE DONE!!) 
@@ -113,10 +115,6 @@ R, this is the lowest grade. The supplier is rejected directly, since the criter
 ### Service Task: Send RFI & RFQ to suppliers 
 
 The Supplier Selection has a high priority and imporatance in our fictive business operations calling for effective decision-making and collaboration. To achieve its best potential, it is crucial for business to implement effective and standardized approach when choosing suppliers. To optimize As-Is process, it is essential to establish fine balance between automation and manual tasks. Automated tasks in streamlining of this process helps to get rid of, as much as possible, manual errors as well provide cost/time-efficiency. The "To Be" process for supplier selection described below in more details combines automated steps with manual tasks and aims to improve decision-making, optimize supplier evaluation, and ensure consistency in the selection criteria. 
-
-Process is triggered by the product order and ends once the right supplier is chosen for the order fulfillment :arrow_down:.
-
-![Supplier Selection To-Be new (2)](https://github.com/DigiBP/Team-Strawberries/assets/5271595/a2a3a3dc-7b42-454e-973b-49f658783835)
 
 The purpose of implementing the "To Be" supplier selection process is to increase decision-making accuracy and efficiency og the overall process. It creates and advantage of technology capabilities while taking into account the special insights and experience from different stakeholders. 
 
