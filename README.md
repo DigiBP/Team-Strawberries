@@ -157,7 +157,11 @@ Everytime the process is trigged by the request, new row in Google Sheet is adde
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/bd1c11c7-2562-410c-8459-9c9fec2d052d)
 
-To identify seperate suppliers and facilitate further processing, a unique identifier called BKey (Business Key) for each supplier is created, by using a formula {{pi * random * 1000}}, which essentially helps to pull and connect the required data to Camunda later on in the process. This helps to retain the data and recognize it within the different steps. 
+To identify seperate suppliers and facilitate further processing, a unique identifier called BKey (Business Key) for each supplier is created, which essentially helps to pull and connect the required data to Camunda later on in the process. 
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/028589ff-3bc7-4dfe-b6db-8fc32cdf99bf)
+
+This helps to retain the data and recognize it within the different steps. 
 
 ### 2. Conduct Market Research
 
