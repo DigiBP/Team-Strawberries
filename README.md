@@ -67,18 +67,18 @@ Currently the As-Is-Process is very manual and user task driven. That said, the 
 
 # The 'To-Be-Process':
 
-There is a high need to improve process.  After evaluating the As-Is-Process our team found a lot of potential of automizing and ditilizing some processes in a non-complex way. The tasks are going to be user-friendly and also transparent. Following are the steps taken from our team, to automize/digitize the process: 
+There is a high need to improve process to make it more time efficient and improve its performance. After evaluating the As-Is-Process our team found a few tasks that had a potential for automization and digitization that can decrease its complexity. In this way the tasks are going to be user-friendly and also transparent. Following are the steps taken from our team, to automize/digitize the process.
 
 ### Process Digitization & Automation
 
-For this we have implemented:
-* Structured definition of evaluation criteria. The main factors that we took into consideration are: location, qualitz grade, price, minimum and maximum order quantity, obtained certifications, shipping method and lead time.
-* Set up of an evaluation form. For this step we are using a Google Forms. It includes all the questions and areas that correspond to the defined criteria. 
-* Integration with supplier data. After receiving filled out forms, the evaluation results then are integrated with the supplier data that is stored in a database, which is in our case google sheets using data connectors.
-* Automation of data collection. Data collection will be automated by sending the evaluation for to suppliers via email. Then the supplier can then fill out the form and submit it electronically.
-* Automation of data analysis. According to the answers provided by the suppliers in the form and they will be given certain amount of points, which will be displayed and ranked in the desicion table providing a clear overview of the supplier suitability. It helps to sort the suppliers into the list of the potential candidates and a definit declines. 
+To improve the overall process of supplier selection we have implemented:
+* Structured definition of evaluation criteria. The main factors that we took into consideration are location, quality grade, price, minimum and maximum order quantity and obtained certifications. 
+* Set up of Google Forms. This will help to initiate the process and to better evaluate the supplier. For this step we are using a Google Forms. It includes, the request from the customer, and request for information and qouta with all of the questions and areas that correspond to the defined criteria for the supplier. 
+* Automation of data collection. Data collection will be automated by sending the RFI & RFQ form to the suppliers via email. Then the supplier can fill out the form and submit the answers electronically.
+* Integration of supplier data. After receiving filled out forms, the provided information, using data connectors, is then integrated as the supplier data that is stored in the database, which in our case is Google Sheets.
+* Automation of data analysis. According to the answers provided by the suppliers in the forms they will be given certain number of points, which will be displayed and ranked in the decision table providing a clear overview of the supplier suitability. It helps to sort the suppliers into the list of the potential candidates and a definite declines.
 
-Process is triggered by the product order and ends once the right supplier is chosen for the order fulfillment :arrow_down:.
+Process is triggered by the product order request and ends once the best supplier(s) is chosen for the order fulfillment :arrow_down:.
 
 ![Supplier Selection To-Be new (2)](https://github.com/DigiBP/Team-Strawberries/assets/5271595/a2a3a3dc-7b42-454e-973b-49f658783835)
 
