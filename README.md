@@ -199,6 +199,9 @@ By submiting this form the process is moving its token further to the following 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/41255956-2a9c-4339-8c8b-0d5144bf6a89)
  
 By claiming this task we receive AI generated inputs for the request, which then has to be reviewd and recorded in supplier database in order to send RFI & RFQ form. 
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/5d9b766c-70c0-4cf8-8f7c-037bd9730159)
+
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/4be70530-245f-4881-8afa-d835f9118c35)
 
@@ -263,6 +266,8 @@ Based on the evaluation score assigned to each considered supplier clear desicio
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/ffd79cb9-528e-4c71-883a-a5c6eceec220)
 
 After selecting the best match for the order request the E-mail is then sent to the requestor with the **Company's Name** followed by its **Total Score**. In addition the link to Google Sheet is shared, to get more detailed view about the supplier, its capabilities and the criteria that was taken into consideration during the evaluation process. 
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/37476ed3-4eae-4120-8b44-87c9e847f3ae)
 
 On the other hand suppliers that lacked in scoring, or were deemed not sufficient for one or another reason to fullfil the customers request, provided inormation is automatically updated and stored in the internal data base for the future references. 
 
