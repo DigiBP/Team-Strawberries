@@ -200,21 +200,33 @@ By submiting this form the process is moving its token further to the following 
  
 By claiming this task we receive AI generated inputs for the request, which then has to be reviewd and recorded in supplier database in order to send RFI & RFQ form. 
  
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/7d34239e-cc90-43eb-9b97-da592b259824)
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/4be70530-245f-4881-8afa-d835f9118c35)
 
-After the task is completed token moves once more to the next Service Task.
+After the task is completed token with two instances (for two different suppliers) moves once more to the next Service Task, and the inputs are saved in the supplier file. 
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/b14d3ab7-75c9-41b2-bd60-951e19167c5a)
 
 ### 3. Send RFI & RFQ Form to the List of Suppliers
 
-To sufficiently evaluate the supplier we need to inquire more information. Therefore, Request for Information (RFI) and for Request for Quota (RFQ) form is sent out to each new supplier that is created as a new row from an output of conducted market research.
+To sufficiently evaluate the supplier we need to inquire more information. Therefore, Request for Information (RFI) and for Request for Quota (RFQ) form is sent out to each new supplier. . 
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/003846cd-2d17-42b6-8728-b1c4d1b5d773)
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/e2c6e2ea-3190-4609-aac0-37c8ea43bc19)
-
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/484ff213-3924-4bf3-8ab2-22e16bbaa84d)
-
+ 
 The form includes criteria on which the final supplier evalutation score is concluded. The required field of input from the supplier side includes: Email, Business Key provided in subject of the e-mail, Company Name, Contact Person, Address, Zip Code & City, Country, Phone Number, Contact Person Email, Quality grade, Certificate. The second half of the form is more directed towards quantitative metrics, that gives more insights into suppliers competitiveness such as: Request for Quote, Price per KG, Minimum Order (in kg), Maximum Order (in kg), and Total Lead Time (days). 
-
-Answers from the supplier are automatically populated within the Google Sheet that can be accessed by any internal process participants.
+ 
+This form is sent automatically to the provided supplier email, by running this scenario in MAKE.
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/484ff213-3924-4bf3-8ab2-22e16bbaa84d)
+ 
+This service task have an Exclusive Gateway (or XOR Gateway) meaning that the token instances can be directed to take different paths:
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/b9fc0e51-9896-4568-bc78-20035ff6a227)
+ 
+Path 1: Update Supplier File: When the supplier submits RFI & RFQ form, and it is not meeting specified criteria or other options scored better, the token proceeds directly to the update supplier file service task, that the collected information could be stored anf if needed be shortlisted, or used for the future reference. With the <Supplier File Update> the process of this path is complete. 
+ 
+Path 2: Wait 7 Days and to proceed to <Select Supplier> User task: It means that after the service task, the token waits for a period of 7 days (Timer Intermediate Catch Event) before proceeding to the next step, which involves selecting a supplier.
 
 ### 4. Supplier Evaluation
 
@@ -222,7 +234,6 @@ After the RFI & RFQ Form is sent the process token moves forward either when the
 
 From there on answers given by suppliers are evaluated according to: 
 *Points
-:exclamation: *Scorecard (do we use??)
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/eff14d44-7771-4bf6-ac9f-cbb3df918394)
 
@@ -248,6 +259,8 @@ At the end **Total Score** is summed providing the list of selections for the de
 ### 5. The Final Supplier Selection
 
 Based on the evaluation score assigned to each considered supplier clear desicion can be made between choosing the right supplier(s) to fullfil the intial customer request. 
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/ffd79cb9-528e-4c71-883a-a5c6eceec220)
 
 After selecting the best match for the order request the E-mail is then sent to the requestor with the **Company's Name** followed by its **Total Score**. In addition the link to Google Sheet is shared, to get more detailed view about the supplier, its capabilities and the criteria that was taken into consideration during the evaluation process. 
 
