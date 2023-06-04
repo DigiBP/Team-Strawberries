@@ -141,15 +141,17 @@ R, this is the lowest grade. The supplier is rejected directly, since the criter
 ### Service Task: Send RFI & RFQ to suppliers 
 
 
-## Steps in Process Automation using MAKE scenarios
+## Steps in Process Automation using MAKE scenarios and Camunda
 
 To implement the automation and to guarantee process flow efficiency MAKE scenarios were used. To set up this environment first step was to create a common Gmail account, from which all of interactions would be conducted, such as: receiving order request, sending/receiving the RFI & RFQ forms, communication with suppliers, as well as the access to Google Sheet and Google Form.
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/838c8b79-80a4-446e-affe-e9e13e63f624)
- 
-Google Sheet is serving as a data base for the purpose of this assignment.
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/6bd3dbd6-538e-4a37-adfb-1b6df1fbfbad) 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/af29c7ad-e471-4ab1-aefe-4de2cce0deed)
+ 
+Google Sheet is serving as a data base for the purpose of this assignment.
 
 ### 1. Integration of Google Sheets
 
@@ -163,16 +165,31 @@ To identify seperate suppliers and facilitate further processing, a unique ident
 
 This helps to retain the data and recognize it within the different steps. 
 
-### 2. Conduct Market Research
+### 2. Process trigger - Request for the Order
 
-The process starts once Supplier Search Request is received. This form contains Requester details (name, surname), Requester e-mail (work e-mail) and Product Name. 
+The process starts once internal supplier search request is received from <Order Product Process>. This form contains Requester details (name, surname), Requester e-mail (work e-mail) and required Product Name. 
 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/6bd3dbd6-538e-4a37-adfb-1b6df1fbfbad)
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/34474438-776d-48d1-8018-8639aec73708)
+
+Once the request been sent, e-mail at redsweetberries@gmail.com account is received stating that this specific form has a new response: 
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/11fd561b-eb37-4528-a232-9c29a36e93c2)
+
+The token in Camunda is create to initiate first user task, which has to be claimed and completed. 
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/36692fa7-c367-4936-a709-f1a0992aace2)
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/6cb7e3d8-c11d-4b23-b5cf-abc00aa69459)
+ 
+The information received in this step provides details that need to be inputed for the market research. 
+
+
+### 3. Conduct Market Research
+
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/1994b9d8-cb7a-4286-bfbe-7454021fce10)
 
 Request for the order initiates the market research. This research is conducted by using OpenAI's model capabilities, along wiht the integration of Google Sheets. 
-
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/53fd9c93-0ae1-4918-bcb3-b2ca416fd73a)
-
 Depending on the incoming request the market research is activated by specifying search for supplier and the product. For example requesting certain amount of strawberry suppliers, the country of origin and the suppliers email address. 
 
 After the list of suffient amount of suppliers is generated, it sent directly to the Gmail. The output of the request is then transferred into supplier data base in Google Sheet. 
