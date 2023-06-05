@@ -270,7 +270,7 @@ After selecting the best match for the order request the E-mail is then sent to 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/37476ed3-4eae-4120-8b44-87c9e847f3ae)
 
 On the other hand suppliers that lacked in scoring, or were deemed not sufficient for one or another reason to fullfil the customers request, provided inormation is automatically updated and stored in the internal data base for the future references. 
-
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/15442fdb-cf89-4bb0-821a-7ca23557f628)
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/962e59fa-d0a6-416e-88e8-84e949074ea4)
 
 With this step the supplier selection process is closed!
