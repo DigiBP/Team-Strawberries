@@ -200,6 +200,10 @@ By submiting this form the process is moving its token further to the following 
  
 By claiming this task we receive AI generated inputs for the request, which then has to be reviewd and recorded in supplier database in order to send RFI & RFQ form. 
 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/77f3f42b-2f3f-49c7-8ad8-2759a2acd919)
+
+These results also automatically are registered in the AI search database:
+
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/5d9b766c-70c0-4cf8-8f7c-037bd9730159)
 
  
