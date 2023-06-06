@@ -226,7 +226,7 @@ This form is sent automatically to the provided supplier email, by running this 
  
 This service task have an Exclusive Gateway (or XOR Gateway) meaning that the token instances can be directed to take different paths:
  
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/b9fc0e51-9896-4568-bc78-20035ff6a227)
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/f931a528-bf18-4fc0-81fd-74e66f3be58c)
  
 Path 1: Update Supplier File: When the supplier submits RFI & RFQ form, and it is not meeting specified criteria or other options scored better, the token proceeds directly to the update supplier file service task, that the collected information could be stored anf if needed be shortlisted, or used for the future reference. With the Supplier File Update the process of this path is complete. 
  
