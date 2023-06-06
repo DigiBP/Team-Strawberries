@@ -261,18 +261,20 @@ At the end **Total Score** is summed providing the list of selections for the de
 
 ### 6. The Final Supplier Selection
 
-Based on the evaluation score assigned to each considered supplier clear desicion can be made between choosing the right supplier(s) to fullfil the intial customer request. Automated email is sent to the initial requester with the chosen supplier and its score and the link to the supplier details on Google Sheet.
+Based on the evaluation score assigned to each considered supplier clear desicion can be made between choosing the best supplier(s) to fullfil the intial customer request. 
 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/ffd79cb9-528e-4c71-883a-a5c6eceec220)
+ 
+Using webhooks for data synchronization and automation between the systems allows to pursue next service task which is to update existing supplier database, in addition to execution of business rule task of shortlisting the top suppliers. From this shortlist an auntomated email is sent to the initial order requester.
+ 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/3b63483b-d67a-44ab-9489-d7e0f95c3271)
+ 
+Automated email is sent to the requestor with the **Company's Name** followed by its **Total Score**. In addition the link to Google Sheet is shared, to get more detailed view about the supplier, its capabilities and the criteria that was taken into consideration during the evaluation process. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/962e59fa-d0a6-416e-88e8-84e949074ea4)
- 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/ffd79cb9-528e-4c71-883a-a5c6eceec220)
 
-After selecting the best match for the order request the E-mail is then sent to the requestor with the **Company's Name** followed by its **Total Score**. In addition the link to Google Sheet is shared, to get more detailed view about the supplier, its capabilities and the criteria that was taken into consideration during the evaluation process. 
+After the email is sent, the token moves to the last user task in the process finalizing suplier selection, which has to be claimed and completed. 
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/37476ed3-4eae-4120-8b44-87c9e847f3ae)
 
-On the other hand suppliers that lacked in scoring, or were deemed not sufficient for one or another reason to fullfil the customers request, provided inormation is automatically updated and stored in the internal data base for the future references. 
-
-With this step the supplier selection process is closed!
+**With this step the Supplier Selection Process is closed!**
