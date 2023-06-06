@@ -263,6 +263,7 @@ At the end **Total Score** is summed providing the list of selections for the de
 
 Based on the evaluation score assigned to each considered supplier clear desicion can be made between choosing the right supplier(s) to fullfil the intial customer request. Automated email is sent to the initial requester with the chosen supplier and its score and the link to the supplier details on Google Sheet.
 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/3b63483b-d67a-44ab-9489-d7e0f95c3271)
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/962e59fa-d0a6-416e-88e8-84e949074ea4)
  
