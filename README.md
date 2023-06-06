@@ -194,7 +194,7 @@ Depending on the incoming request the form is submited by specifying search for 
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/24ee66d2-63a3-4cb7-aced-7b422affb3ce)
 
-By running following MAKE scenario token is moving further to the following User Task. We receive AI generated inputs for the request.
+By running following MAKE scenario token is moving further to the next User Task. We receive AI generated inputs for the request.
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/5d9b766c-70c0-4cf8-8f7c-037bd9730159)
 
