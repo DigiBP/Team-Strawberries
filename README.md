@@ -265,7 +265,7 @@ Based on the evaluation score assigned to each considered supplier clear desicio
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/ffd79cb9-528e-4c71-883a-a5c6eceec220)
  
-Using webhooks for data synchronization and automation between the systems allows to pursue next service task which is to update existing supplier database, in addition to execution of business rule task of shortlisting the top suppliers. From this shortlist an auntomated email is sent to the initial order requester.
+Using webhooks for data synchronization and automation between the systems allows to pursue next service task which is to update existing supplier database, in addition to the execution of business rule task of shortlisting the top suppliers. From this shortlist an automated email is sent to the initial order requestor.
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/962e59fa-d0a6-416e-88e8-84e949074ea4)
  
