@@ -193,18 +193,16 @@ Market research is conducted by using OpenAI's model capabilities, along wiht th
 Depending on the incoming request the form is submited by specifying search for supplier and the product. For example requesting certain amount of strawberry suppliers, the country of origin and the suppliers email address. 
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/24ee66d2-63a3-4cb7-aced-7b422affb3ce)
- 
-By submiting this form the process is moving its token further to the following User Task. 
- 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/41255956-2a9c-4339-8c8b-0d5144bf6a89)
- 
-By running MAKE scenario and claiming this task we receive AI generated inputs for the request, which then has to be reviewd and recorded in supplier database in order to send RFI & RFQ form. 
+
+By running following MAKE scenario and claiming this task the process is moving its token further to the following User Task. We receive AI generated inputs for the request.
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/5d9b766c-70c0-4cf8-8f7c-037bd9730159)
 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/41255956-2a9c-4339-8c8b-0d5144bf6a89)
+
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/77f3f42b-2f3f-49c7-8ad8-2759a2acd919)
 
-These results also automatically are registered in the AI search database:
+These results also automatically are registered in the AI search database, which then has to be reviewd and recorded in supplier database in order to send RFI & RFQ form. :
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/4be70530-245f-4881-8afa-d835f9118c35)
 
