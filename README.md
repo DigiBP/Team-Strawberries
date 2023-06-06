@@ -198,15 +198,14 @@ By submiting this form the process is moving its token further to the following 
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/41255956-2a9c-4339-8c8b-0d5144bf6a89)
  
-By claiming this task we receive AI generated inputs for the request, which then has to be reviewd and recorded in supplier database in order to send RFI & RFQ form. 
+By running MAKE scenario and claiming this task we receive AI generated inputs for the request, which then has to be reviewd and recorded in supplier database in order to send RFI & RFQ form. 
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/5d9b766c-70c0-4cf8-8f7c-037bd9730159)
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/77f3f42b-2f3f-49c7-8ad8-2759a2acd919)
 
 These results also automatically are registered in the AI search database:
 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/5d9b766c-70c0-4cf8-8f7c-037bd9730159)
-
- 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/4be70530-245f-4881-8afa-d835f9118c35)
 
 After the task is completed token with two instances (for two different suppliers) moves once more to the next Service Task, and the inputs are saved in the supplier file. 
