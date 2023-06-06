@@ -269,12 +269,12 @@ Using webhooks for data synchronization and automation between the systems allow
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/3b63483b-d67a-44ab-9489-d7e0f95c3271)
  
-Automated email is sent to the requestor with the **Company's Name** followed by its **Total Score**. In addition the link to Google Sheet is shared, to get more detailed view about the supplier, its capabilities and the criteria that was taken into consideration during the evaluation process. 
-
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/962e59fa-d0a6-416e-88e8-84e949074ea4)
+Automated email is sent to the requestor with the **Company's Name** followed by its **Total Score**. In addition the link to Google Sheet is shared, to get more detailed view about the supplier, its capabilities and the criteria that was taken into consideration during the evaluation process.
+ 
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/37476ed3-4eae-4120-8b44-87c9e847f3ae)
 
 After the email is sent, the token moves to the last user task in the process finalizing suplier selection, which has to be claimed and completed. 
  
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/37476ed3-4eae-4120-8b44-87c9e847f3ae)
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/962e59fa-d0a6-416e-88e8-84e949074ea4)
 
 **With this step the Supplier Selection Process is closed!**
