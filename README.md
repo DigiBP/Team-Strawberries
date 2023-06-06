@@ -252,7 +252,7 @@ Each supplier is appointed certain amount of points regarding different evaluati
 
 <p> :globe_with_meridians: Coutry Point Scale: 0 - 50;  <br>
 <p> :straight_ruler: Quality Point Scale: 0 - 50;  <br>
-<p> :moneybag: Price Point Scale: ?  <br>
+<p> :moneybag: Price Point Scale: The lower price per kilo the higher the score supplier gets: price < 4 awarded 30 points, < 5 awarded 5 points, = 5 awarded 0 points. 
 <p> :arrow_down: Min. Order Point: if minimum order < 200, appoint -1000 (=unacceptable). if > 200, keep 0.  <br>
 <p> :arrow_up: Max. Order Point: if minimum order < 500, appoint -1000 (=unacceptable). if > 500, keep 0.  <br>
 <p> :scroll: Certification Points: Each certification is worth 50 points. <br>
@@ -261,7 +261,10 @@ At the end **Total Score** is summed providing the list of selections for the de
 
 ### 6. The Final Supplier Selection
 
-Based on the evaluation score assigned to each considered supplier clear desicion can be made between choosing the right supplier(s) to fullfil the intial customer request. 
+Based on the evaluation score assigned to each considered supplier clear desicion can be made between choosing the right supplier(s) to fullfil the intial customer request. Automated email is sent to the initial requester with the chosen supplier and its score and the link to the supplier details on Google Sheet.
+
+
+![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/962e59fa-d0a6-416e-88e8-84e949074ea4)
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/ffd79cb9-528e-4c71-883a-a5c6eceec220)
 
@@ -270,7 +273,5 @@ After selecting the best match for the order request the E-mail is then sent to 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/37476ed3-4eae-4120-8b44-87c9e847f3ae)
 
 On the other hand suppliers that lacked in scoring, or were deemed not sufficient for one or another reason to fullfil the customers request, provided inormation is automatically updated and stored in the internal data base for the future references. 
- 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/962e59fa-d0a6-416e-88e8-84e949074ea4)
 
 With this step the supplier selection process is closed!
