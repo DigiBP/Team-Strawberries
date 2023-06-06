@@ -194,7 +194,7 @@ Depending on the incoming request the form is submited by specifying search for 
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/24ee66d2-63a3-4cb7-aced-7b422affb3ce)
 
-By running following MAKE scenario and claiming this task the process is moving its token further to the following User Task. We receive AI generated inputs for the request.
+By running following MAKE scenario token is moving further to the following User Task. We receive AI generated inputs for the request.
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/5d9b766c-70c0-4cf8-8f7c-037bd9730159)
 
@@ -202,7 +202,7 @@ By running following MAKE scenario and claiming this task the process is moving 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/77f3f42b-2f3f-49c7-8ad8-2759a2acd919)
 
-These results also automatically are registered in the AI search database, which then has to be reviewd and recorded in supplier database in order to send RFI & RFQ form. :
+By claiming and completing the user task the AI generated results are automatically registered in the AI search database, which then has to be reviewd and recorded in supplier database in order to send RFI & RFQ form. :
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/4be70530-245f-4881-8afa-d835f9118c35)
 
