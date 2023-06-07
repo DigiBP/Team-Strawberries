@@ -116,14 +116,15 @@ The team has defined a dedicated point system, which helps us to decide, which s
 
 The following criterias were defined with the possible inputs in the brackets:
 
-* Country (Switzerland, Germany, Italy, France etc.)
-* Quality Grade ("A", "B", "AB")
-* Price per kg (">=5", "<5", "<=4") 
-* Minimum order ("<=200")
-* Maximum order ("<=500")
-* Certification ("HACCP", "Bio Suisse")
-* Shipping Method ("Air", "Ground", "Sea")
-* Lead Time (">=5")
+* Country (Switzerland = 50 points; other Countries = 40 points)
+* Quality Grade ("A" = 50 points, "AB" = 40 points, "B" = 30 points)
+* Price ("<4 CHF/kg" = 50 points, "4-5 CHF/kg" = 5 points, ">5 CHF/kg" = 0 points) 
+* Minimum order ("<=200kg" = -1000 points, "=<200kg" = 0 points)
+* Maximum order ("<=500kg" = -1000 points, "=<500kg" = 0 points)
+* Certification ("HACCP", "EU Organic", "Global GAP" and "Bio Suisse" - for each Certification 50 points)
+
+The sum of the criteria points should be helpful in the decision of supplier identification.
+These can be supplemented with additional criteria or other point systems as desired.
 
 ![Screenshot 2023-05-03 at 21 25 06](https://user-images.githubusercontent.com/5271595/236023525-c1bbd31c-9ff3-4d4f-9e65-03b2e34509e6.png)
 
