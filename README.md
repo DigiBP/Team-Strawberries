@@ -224,7 +224,7 @@ This form is sent automatically to the provided supplier email, by running this 
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/484ff213-3924-4bf3-8ab2-22e16bbaa84d)
  
-This service task have an Exclusive Gateway (or XOR Gateway) meaning that the token instances can be directed to take different paths:
+This service task has a parallel gateway meaning that the token instances are done concurently.
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/f931a528-bf18-4fc0-81fd-74e66f3be58c)
  
