@@ -129,6 +129,8 @@ The next step in the make scenario is to create a business key. This is a unique
 
 Once complete it makes a HTTP request to complete the message and transfers the variables of Product name and requester to the next task in the process
 
+![request received](https://github.com/DigiBP/Team-Strawberries/assets/127504098/4e02b276-8110-4822-9dce-46acb95a8aa5)
+
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/6cb7e3d8-c11d-4b23-b5cf-abc00aa69459)
  
 After the Input Supplier Search is completed the token moves forward to the next Service task.
