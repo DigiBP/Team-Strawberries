@@ -117,20 +117,18 @@ We designated Google Sheets as our principal database for this project, an essen
 
 ### 1. Request Received
 
-The process starts once internal supplier search request is received from Order Product Process. This form contains Requester details (name, surname),  and required Product Name. 
-
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/34474438-776d-48d1-8018-8639aec73708)
-
-Once the request been sent, e-mail at redsweetberries@gmail.com account is received stating that this specific form has a new response, and it is populated in the internal supplier data base. 
-
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/11fd561b-eb37-4528-a232-9c29a36e93c2)
- 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/1994b9d8-cb7a-4286-bfbe-7454021fce10)
 
-The token in Camunda is created after Message Start Event is initiated and transferred to the first user task of Input Supplier Search, which has to be claimed and completed. 
+The process is triggered by an input that is received from a google form submission. The google form prompts a user from the order product process to create a request to find a new supplier. The requester inputs their name and the product they are searching for. Note: these requests come from a common team email address so no specific email of the requester is needed. See below a screenshot of the form. 
 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/36692fa7-c367-4936-a709-f1a0992aace2)
- 
+![Request Received Form](https://github.com/DigiBP/Team-Strawberries/assets/127504098/58bdd1af-f1f8-4120-9f52-59d16f20db6e)
+
+The next step in the make scenario is to create a business key. This is a unique identifier that helps to connect data to a specific process instance.
+
+![business key](https://github.com/DigiBP/Team-Strawberries/assets/127504098/5984d9de-d6c8-40a1-a0bd-1f02f5e8bd28)
+
+Once complete it makes a HTTP request to complete the message and transfers the variables of Product name and requester to the next task in the process
+
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/6cb7e3d8-c11d-4b23-b5cf-abc00aa69459)
  
 After the Input Supplier Search is completed the token moves forward to the next Service task.
