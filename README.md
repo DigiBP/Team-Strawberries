@@ -12,7 +12,7 @@
 
 
 # Introduction
-The selection of the supplier might be a quite tought process to go through, however it is a crucial one, since it has a significant impact on the success or losses of a company. That said a strategic approach of choosing the right supplier is important. The supplier selection process involves many different steps, which has a direct effect on company's resourses such as human, financial, time, as well as the quality and reliability of it all. In addition, supplier selection also plays a key role in managing risk and ensuring compliance. It requires careful planning, evaluation and communication, where introduction of digitalization and automation can improve supply process, enhance sustainability and reduce costs. Our project team is dedicted to help the SMEs to chose the right supplier efficienlty and without investing too much time in the due dilligence process. 
+Choosing the right supplier can be a challenging task, yet it is vital due to its profound influence on a company's profitability or losses. Therefore, it's essential to employ a strategic method in picking the most appropriate supplier. The selection procedure involves numerous steps which directly impact the company's resources, including personnel, financial, and time resources, as well as the overall quality and reliability. Furthermore, supplier selection is integral to risk management and ensuring regulatory compliance. This process calls for meticulous planning, assessment, and communication. The integration of digital and automated solutions can enhance the supply process, promote sustainability, and reduce costs. Our project team is committed to assisting small and medium enterprises (SMEs) in efficiently choosing the best supplier, minimizing the time and effort spent on due diligence.
 
 ## Background
 Our project's primary objective is to transform and enhance the supplier selection process by leveraging digitalization and automation technologies. The case presented further, shall be used for best practice cases for other SMEs. By integrating these cutting-edge solutions, we aim to significantly improve the efficiency and effectiveness of the decision-making process for choosing suppliers. To achieve this, we plan to develop sophisticated decision models that incorporate clearly defined rules and criteria, ensuring a consistent and transparent evaluation process.
@@ -27,12 +27,12 @@ Our project team will create Application Programming Interfaces (APIs) that faci
 
 # The 'As-Is-Process':
 
-![Supplier Selection As-Is v2 (1)](https://github.com/DigiBP/Team-Strawberries/assets/5271595/d608035f-aa73-4cd7-b05f-3dc1338ea342)
+![As-Is Process](https://github.com/DigiBP/Team-Strawberries/assets/127504098/5f85e342-b86f-4523-af61-f540d396d684)
 
-A typical supplier selection process should involve the following steps: 
+
+A typical supplier selection process involves the following steps: 
 * Identifying suppliers
 * Soliciting information from suppliers
-* Setting contract terms
 * Negotiating with suppliers
 * Evaluating suppliers
 
@@ -41,12 +41,12 @@ The process model beginns with an internal request for a new supplier. As soon a
 * internal and external stakeholder consulting 
 * conduct the market research
 
-As soon as all steps are completed, the user is creating a list of potential suppliers with the help of excel ("supplier file"). As soon as the list is complete, the user is sending the Request for Information (RFI) or Request for Proposal (RFP), and reviewing responses. If the information received from the supplier, the user is updating the supplier file. If within 7 days there is no answer, the answers are not received, the supplier on the list is not consiered.
+As soon as all steps are completed, the user is creating a list of potential suppliers with the help of excel ("supplier file"). As soon as the list is complete, the user is sending the Request for Information (RFI) or Request for Quote (RFQ), and reviewing responses. Once the information is received from the supplier, the user is updating the supplier file. If within 7 days there is no answer, the answers are not received, the supplier on the list is not considered.
 
-After 7 days, suppliers are evaluated based on criteria such as company characteristics, product quality, financial stability, geographical location, and sustainability practices. Initial screening of suppliers is performed using these criteria, and if there are enough pre-qualified suppliers, the process proceeds to soliciting information from suppliers. The evaluation stage consists of developing a weighted scoring system, scoring and ranking suppliers based on their RFI/RFP responses, and conducting site visits or audits if necessary. If the supplier meets performance expectations, the relationship continue and the department which requested the research, receives an e-mail with the perferred supplier
+After 7 days, suppliers are evaluated based on criteria such as company characteristics, product quality, financial stability, geographical location, and sustainability practices. Initial screening of suppliers is performed using these criteria, and if there are enough pre-qualified suppliers, the process proceeds to evaulation. The evaluation stage consists of developing a weighted scoring system, scoring and ranking suppliers based on their RFI/RFP. If the supplier meets performance expectations, the relationship continue and the department which requested the research, receives an e-mail with the perferred supplier
 
 ### ⚡ Problem of As-Is-Process: 
-Currently the As-Is-Process is very manual and user task driven. That said, the process is prone to error and is not efficient. The main issue with the As-Is process is that there is no automation, and most of the process steps are formed with user tasks, which consumes a lot of time to be reviewed and manually forwarded futher within the process. 
+At present, the existing process is heavily reliant on manual inputs and individual tasks. This means it's susceptible to mistakes and lacks efficiency. The primary concern with the current process is its absence of automation, with many of the steps involving manual tasks that require significant time to review and manually advance within the process. Another challenge is the storage of information locally on individual computers and email accounts, leading to issues as there isn't a centralized source of information.
 
 ### ⌛ Following tasks shall be automated/digitilized: 
 * The market research
@@ -80,7 +80,7 @@ To improve the overall process of supplier selection we have implemented:
 
 Process is triggered by the product order request and ends once the best supplier(s) is chosen for the order fulfillment :arrow_down:.
 
-![Supplier Selection To-Be new (2)](https://github.com/DigiBP/Team-Strawberries/assets/5271595/a2a3a3dc-7b42-454e-973b-49f658783835)
+![To-Be Process](https://github.com/DigiBP/Team-Strawberries/assets/127504098/f3d010d5-c63d-4acb-acf8-e0c6968c8f5b)
 
 The purpose of implementing the "To Be" supplier selection process is to increase decision-making accuracy and efficiency of the overall process. It provides the advantage of technology capabilities while taking into account the special insights and experience from different stakeholders. 
 
@@ -101,43 +101,15 @@ It is important to note that while some of the steps can be automated, there wil
 
 There must be certain assumptions made for the fluent implementation of the "To Be" process for supplier selection. For the sake of the exercise, we must assume that: 
 
-* :one: Access to the industry publications, databases, and other relevant research sources is available. 
-* :two: Consultation with external and internal stakeholders are available and they are willing to share their recommendations. 
-* :three: The automated system can efficiently collect and exhibit data from sources. 
-* :four: The RFI and RFQ are sent to all relevant existing players within the industry and the answers are populating the database for the n amount of times (unlimited submissions). 
-* :five: The business - Strawberry Inc., has well predefined criteria and guidelines to aid on the evaluation and the official documentation is attainable to all in the decision included members. 
+* 1️⃣: Consultation with external and internal stakeholders are available and they are willing to share their recommendations. 
+* 2️⃣: The automated system can efficiently collect and exhibit data from sources. 
+* 3️⃣: The RFI and RFQ are sent to all relevant existing players within the industry and the answers are populating the database for the n amount of times (unlimited submissions). 
+* 4️⃣: The business - Strawberry Inc., has well predefined criteria and guidelines to aid on the evaluation and the official documentation is attainable to all in the decision included members. 
 
 Keeping in mind these indicated assumptions we can proceed to each step evaluation. 
 
-## 1) Create a decision model for the supplier evaluation (TO BE DONE!!) 
-### Task: Conduct Supplier Evaluation
 
-The team has defined a dedicated point system, which helps us to decide, which supplier should be chosen, considering our criterias set.
-
-The following criterias were defined with the possible inputs in the brackets:
-
-* Country (Switzerland, Germany, Italy, France etc.)
-* Quality Grade ("A", "B", "AB")
-* Price per kg (">=5", "<5", "<=4") 
-* Minimum order ("<=200")
-* Maximum order ("<=500")
-* Certification ("HACCP", "Bio Suisse")
-* Shipping Method ("Air", "Ground", "Sea")
-* Lead Time (">=5")
-
-![Screenshot 2023-05-03 at 21 25 06](https://user-images.githubusercontent.com/5271595/236023525-c1bbd31c-9ff3-4d4f-9e65-03b2e34509e6.png)
-
-
-Here is our longlist grading:
-
-A, this is the highest grade. The supplier fullfills all necessary criterias.
-B, this is the medium grade. The supplier is placed on the waiting list, in case the perferred supplier is not fullfilling his deliverables.
-R, this is the lowest grade. The supplier is rejected directly, since the criterias set are not fullfilled.
-
-![Screenshot 2023-05-03 at 21 25 45](https://user-images.githubusercontent.com/5271595/236023789-f3c7cc5c-49d4-49e6-a084-be2c909b3fe6.png)
-
-
-## 2) Automatically send the RFI & RFQ
+## 1) Automatically send the RFI & RFQ
 ### Service Task: Send RFI & RFQ to suppliers 
 
 
@@ -279,3 +251,39 @@ After the email is sent, the token moves to the last user task in the process fi
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/37476ed3-4eae-4120-8b44-87c9e847f3ae)
 
 **With this step the Supplier Selection Process is completed!**
+ 
+ ### 7. Outlook
+ 
+ Based on the implementation of the To-Be process the below is an outlook for further advcancements in making the process better:
+ 
+## 1) Create a decision model for the supplier evaluation 
+ 
+ As the Current To-Be process uses a google sheet with built in criteria to select the supplier, an opportunity to further develop the process can be the integration of DMN models like below.
+ 
+### Task: Conduct Supplier Evaluation
+
+The team has defined a dedicated point system, which helps us to decide, which supplier should be chosen, considering our criterias set.
+
+The following criterias were defined with the possible inputs in the brackets:
+
+* Country (Switzerland, Germany, Italy, France etc.)
+* Quality Grade ("A", "B", "AB")
+* Price per kg (">=5", "<5", "<=4") 
+* Minimum order ("<=200")
+* Maximum order ("<=500")
+* Certification ("HACCP", "Bio Suisse")
+* Shipping Method ("Air", "Ground", "Sea")
+* Lead Time (">=5")
+
+![Screenshot 2023-05-03 at 21 25 06](https://user-images.githubusercontent.com/5271595/236023525-c1bbd31c-9ff3-4d4f-9e65-03b2e34509e6.png)
+
+
+Here is our longlist grading:
+
+A, this is the highest grade. The supplier fullfills all necessary criterias.
+B, this is the medium grade. The supplier is placed on the waiting list, in case the perferred supplier is not fullfilling his deliverables.
+R, this is the lowest grade. The supplier is rejected directly, since the criterias set are not fullfilled.
+
+![Screenshot 2023-05-03 at 21 25 45](https://user-images.githubusercontent.com/5271595/236023789-f3c7cc5c-49d4-49e6-a084-be2c909b3fe6.png)
+
+ 
