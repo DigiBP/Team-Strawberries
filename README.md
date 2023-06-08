@@ -109,37 +109,15 @@ There must be certain assumptions made for the fluent implementation of the "To 
 Keeping in mind these indicated assumptions we can proceed to each step evaluation. 
 
 
-## 1) Automatically send the RFI & RFQ
-### Service Task: Send RFI & RFQ to suppliers 
-
-
 ## Steps in Process Automation using MAKE scenarios and Camunda
 
-To implement the automation and to guarantee process flow efficiency MAKE scenarios were used. To set up this environment first step was to create a common Gmail account, from which all of interactions would be conducted, such as: receiving order request, sending/receiving the RFI & RFQ forms, communication with suppliers, as well as the access to Google Sheet and Google Form.
+To effectively automate operations and assure the seamless flow of processes, we leveraged the capabilities of MAKE scenarios. Establishing the appropriate environment was our initial step. We commenced by creating a centralized Gmail account, designed to be the hub of all interaction. This account served several functions, including but not limited to, receiving order requests, sending and receiving RFI and RFQ forms, and communicating with suppliers. It also facilitated access to critical tools like Google Sheets and Google Forms.
 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/838c8b79-80a4-446e-affe-e9e13e63f624)
+We designated Google Sheets as our principal database for this project, an essential tool that supports the robust functioning of our system. This streamlined, web-based solution offered a strategic approach to managing and analyzing data for this assignment, contributing to the overall efficiency of our operations.
 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/6bd3dbd6-538e-4a37-adfb-1b6df1fbfbad) 
+### 1. Request Received
 
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/af29c7ad-e471-4ab1-aefe-4de2cce0deed)
- 
-Google Sheet is serving as a data base for the purpose of this assignment.
-
-### 1. Integration of Google Sheets
-
-Everytime the process is trigged by the request, new row in Google Sheet is added, which helps to collect inputs for data base and send the tocken to the following process. 
-
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/bd1c11c7-2562-410c-8459-9c9fec2d052d)
-
-To identify seperate suppliers and facilitate further processing, a unique identifier called BKey (Business Key) for each supplier is created, which essentially helps to pull and connect the required data to Camunda later on in the process. 
-
-![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/028589ff-3bc7-4dfe-b6db-8fc32cdf99bf)
-
-This helps to retain the data and recognize it within the different steps. 
-
-### 2. Process trigger - Request for the Order
-
-The process starts once internal supplier search request is received from Order Product Process. This form contains Requester details (name, surname), Requester e-mail (work e-mail) and required Product Name. 
+The process starts once internal supplier search request is received from Order Product Process. This form contains Requester details (name, surname),  and required Product Name. 
 
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/34474438-776d-48d1-8018-8639aec73708)
 
@@ -159,9 +137,10 @@ After the Input Supplier Search is completed the token moves forward to the next
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/e6918da4-c424-4cd9-8218-eb3db9263e2c) 
 
-### 3. Conduct Market Research
 
-Market research is conducted by using OpenAI's model capabilities, along wiht the integration of Google Tools. 
+### 2. Conduct Market Research
+
+Market research is conducted by using OpenAI's Chat GPT model capabilities, along with the integration of Google Tools. 
 Depending on the incoming request the form is submited by specifying search for supplier and the product. For example requesting certain amount of strawberry suppliers, the country of origin and the suppliers email address. 
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/24ee66d2-63a3-4cb7-aced-7b422affb3ce)
@@ -182,7 +161,7 @@ After the task is completed token with two instances (for two different supplier
  
 ![image](https://github.com/DigiBP/Team-Strawberries/assets/97253646/b14d3ab7-75c9-41b2-bd60-951e19167c5a)
 
-### 4. Send RFI & RFQ Form to the List of Suppliers
+### 3. Send RFI & RFQ Form to the List of Suppliers
 
 To sufficiently evaluate the supplier we need to inquire more information. Therefore, Request for Information (RFI) and for Request for Quota (RFQ) form is sent out to each new supplier.
 
@@ -204,7 +183,7 @@ Path 1: Update Supplier File: When the supplier submits RFI & RFQ form, and it i
  
 Path 2: Wait 7 Days and to proceed to Select Supplier User task: It means that after the service task, the token waits for a period of 7 days (Timer Intermediate Catch Event) before proceeding to the next step, which involves selecting a supplier. 
 
-### 5. Supplier Evaluation
+### 4. Supplier Evaluation
 
 After the RFI & RFQ Form is sent the process token moves forward either when the information is received, or when the time event expires, which is set to be 7 days from the sent out request for information. 
 
@@ -232,7 +211,7 @@ Each supplier is appointed certain amount of points regarding different evaluati
 
 At the end **Total Score** is summed providing the list of selections for the decision. <br>
 
-### 6. The Final Supplier Selection
+### 5. The Final Supplier Selection
 
 Based on the evaluation score assigned to each considered supplier clear desicion can be made between choosing the best supplier(s) to fullfil the intial customer request. 
 
@@ -252,7 +231,7 @@ After the email is sent, the token moves to the last user task in the process fi
 
 **With this step the Supplier Selection Process is completed!**
  
-## 7. Outlook
+## 6. Outlook
  
  Based on the implementation of the To-Be process the below is an outlook for further advcancements in making the process better:
  
