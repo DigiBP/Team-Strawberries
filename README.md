@@ -10,7 +10,7 @@
 
 **Coach of the Project: Charuta Pande/Maja Spahic** 
 
-To view the project in detail please select the "Wiki" button as seen below:
+**To view the project in detail please select the "Wiki" button as seen below:**
 
 ![wiki](https://github.com/DigiBP/Team-Strawberries/assets/127504098/d338b7fd-ca23-4407-8b52-6a9d4457da37)
 
