@@ -252,11 +252,11 @@ After the email is sent, the token moves to the last user task in the process fi
 
 **With this step the Supplier Selection Process is completed!**
  
- ### 7. Outlook
+## 7. Outlook
  
  Based on the implementation of the To-Be process the below is an outlook for further advcancements in making the process better:
  
-## 1) Create a decision model for the supplier evaluation 
+### 1) Create a decision model for the supplier evaluation 
  
  As the Current To-Be process uses a google sheet with built in criteria to select the supplier, an opportunity to further develop the process can be the integration of DMN models like below.
  
